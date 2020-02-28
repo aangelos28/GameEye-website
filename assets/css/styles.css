@@ -84,7 +84,7 @@ div.navbar-collapse {
     left: 0;
     background-color: #fff;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
   }
 }
 
@@ -195,6 +195,12 @@ div.navbar-collapse {
   padding-bottom: 10px;
 }
 
+#about-us-section {
+  margin-top: 0px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
 .feature-box .icon {
   font-size: 30px;
   position: absolute;
@@ -290,4 +296,3 @@ iframe.presentation {
   margin-bottom: 50px;
   width: 100%;
 }
-
