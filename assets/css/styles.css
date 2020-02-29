@@ -217,6 +217,14 @@ body {
     text-align: center;
 }
 
+.justified-list {
+    text-align: justify;
+}
+
+.space-above-60 {
+    margin-top: 60px;
+}
+
 /*
 ==============================================
 Problem Info Section Styles
@@ -273,8 +281,25 @@ Deliverables Section Styles
     top: 50%;
 }
 
+#deliverables-section .text-center.deliverables-center-label {
+    text-align: center;
+}
+
+#risk-matrix-label {
+    margin-bottom: 40px;
+}
+
 #deliverables-section .row.deliverables-row {
     margin-top: 80px;
+}
+
+#risk-matrix {
+    width: 65%;
+    height: auto;
+}
+
+.risk-header {
+    font-weight: 700;
 }
 
 #deliverables-section .deliverable-image {
