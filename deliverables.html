@@ -15,6 +15,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -124,6 +125,65 @@
                     </a>
                 </div>
             </div>
+
+            <!-- Risk Matrix -->
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 id="risk-matrix-label" class="text-center deliverables-center-label">Risk Matrix</h3>
+                <div class="col text-center" data-aos="fade">
+                    <img id="risk-matrix" src="assets/img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
+                <div class="col space-above-60" data-aos="fade-right">
+                    <h5 class="risk-header">Technical Risks:</h5>
+                    <ul class="justified-list">
+                        <li><b>T1:</b> Time constraints to learning new APIs.<br><br></li>
+                        <li><b>T2:</b> Video game database connectivity failure.<br><br></li>
+                        <li><b>T3:</b> Platform becomes so popular that the servers get flooded.<br><br></li>
+                        <li><b>T4:</b> Main database fails.<br><br></li>
+                        <li><b>T5:</b> The structure of source websites changes, causing web scraping to fail.<br></li>
+                    </ul>
+                </div>
+                <div class="col space-above-60" data-aos="fade-left">
+                    <h5 class="risk-header">Customer Risks:</h5>
+                    <ul class="justified-list">
+                        <li>
+                            <b>C1:</b> Gamers may believe that they do not need GameEye in order to follow news of their favorite games,
+                            as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
+                        </li>
+                        <li><b>C2:</b> Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
+                        <li><b>C3:</b> Data breach exposed user information (in our case, emails and password hashes).<br><br></li>
+                        <li><b>C4:</b> User does not know how to use the application.<br></li>
+                    </ul>
+                </div>
+                <div class="col space-above-60" data-aos="fade-right">
+                    <h5 class="risk-header">Technical Risk Mitigations:</h5>
+                    <ul class="justified-list">
+                        <li><b>T1:</b> Independent skills, training and practice<br><br></li>
+                        <li><b>T2:</b> No mitigation; beyond control<br><br></li>
+                        <li><b>T3:</b> Make solution scalable; use load balancers, have multiple backend servers and multiple database servers<br><br></li>
+                        <li><b>T4:</b> Have more instances of the main database<br><br></li>
+                        <li><b>T5:</b> Scrape RSS feeds, which are far less likely to change<br></li>
+                    </ul>
+                </div>
+                <div class="col space-above-60" data-aos="fade-left">
+                    <h5 class="risk-header">Customer Risk Mitigations:</h5>
+                    <ul class="justified-list">
+                        <li>
+                            <b>C1:</b> GameEye provides features that its competition may lack, such as noise filtering and the ability to track games.<br><br>
+                        </li>
+                        <li>
+                            <b>C2:</b> GameEye is not meant to be a replacement for video game news websites, as such,
+                            it provides links to already existing news sources which increases traffic to them.<br><br>
+                        </li>
+                        <li>
+                            <b>C3:</b> Store less sensitive info; use a 3rd party authentication provider; do penetration testing;
+                            use database encryption<br><br>
+                        </li>
+                        <li><b>C4:</b> Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -144,8 +204,8 @@
 
 <script>
     // Initialize popups
-    $(document).ready(function() {
-        $('.image-link').magnificPopup({type:'image'});
+    $(document).ready(function () {
+        $('.image-link').magnificPopup({type: 'image'});
     });
 
     $('.popup-image-link').magnificPopup({
