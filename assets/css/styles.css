@@ -199,6 +199,11 @@ body {
     font-weight: 600;
 }
 
+/* Eliminate blank space after header */
+.clean-navbar.fixed-top + .page {
+    padding-top: 0px;
+}
+
 .clean-block .block-heading p {
     max-width: 800px;
     margin: auto;
@@ -260,7 +265,7 @@ Deliverables Section Styles
 #deliverables-section {
     margin-top: 0px;
     padding-top: 80px;
-    padding-bottom: 10px;
+    padding-bottom: 80px;
 }
 
 #deliverables-section .text-left.deliverables-side-label {
