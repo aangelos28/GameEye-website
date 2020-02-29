@@ -1,0 +1,10 @@
+{
+  "name": "TeamWebsite",
+  "version": "1.0.0",
+  "dependencies": {
+    
+  },
+  "scripts": {
+    "export": "mkdir export && cd export && cp ../*.html . && cp ../assets . -rf"
+  }
+}
