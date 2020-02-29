@@ -101,15 +101,3 @@ const particlesJsConfig = {
 particlesJS('particles-canvas', particlesJsConfig, function() {
   console.log('callback - particles.js config loaded');
 });
-
-
-// Initialize popup
-$(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-});
-
-$('.popup-image-link').magnificPopup({
-  type: 'image'
-  // other options
-});
-
