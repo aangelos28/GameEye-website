@@ -1,28 +1,32 @@
+/*
+==============================================
+Navbar Styles
+==============================================
+ */
 .navbar {
-    transition: background-color 0.6s ease 0s;
     opacity: 1;
     height: 70px;
     min-height: 0px;
     padding-bottom: 12px;
     padding-top: 12px;
+    transition: background-color 0.6s ease 0s;
 }
 
 .clean-navbar.fixed-bottom, .clean-navbar.fixed-top {
     box-shadow: none;
 }
 
-.navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-    color: #ffffff;
-}
-
 .navbar-brand.logo {
     color: #ffffff;
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     font-weight: 800;
     font-size: xx-large;
-    max-height: auto;
     padding-bottom: 0px;
     padding-top: 0px;
+}
+
+.navbar-brand.logo:hover {
+    color: #ffffff;
 }
 
 .navbar-brand.logo > img {
@@ -33,9 +37,6 @@
 
 @media (max-width: 360px) {
     .navbar-brand.logo {
-        color: #ffffff;
-        font-family: 'Lato';
-        font-weight: 800;
         font-size: x-large;
     }
 }
@@ -48,18 +49,21 @@
     }
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #ffffff;
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
     font-size: small;
     font-weight: 800;
 }
 
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: #faff00;
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Fix navbar jumping to smaller screen size */
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1140px;
+    }
 }
 
 div.navbar-collapse {
@@ -68,13 +72,14 @@ div.navbar-collapse {
     width: 720px;
 }
 
+/*
+Navlink Underline Animation
+ */
 @media (min-width: 992px) {
     .nav-link.animation {
         position: relative;
     }
-}
 
-@media (min-width: 992px) {
     .nav-link.animation:before {
         content: "";
         position: absolute;
@@ -83,14 +88,10 @@ div.navbar-collapse {
         bottom: 0;
         left: 0;
         background-color: #fff;
-        visibility: hidden;
-        transition: all 0.3s ease;
+        transition: width 0.3s ease;
     }
-}
 
-@media (min-width: 992px) {
     .nav-link.animation:hover:before {
-        visibility: visible;
         width: 100%;
     }
 }
@@ -102,6 +103,43 @@ div.navbar-collapse {
     }
 }
 
+@media (max-width: 992px) {
+    .navbar-mobile-solid {
+        background-color: rgba(68, 84, 105, 0.95);
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, 0);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.fas.fa-bars.navbar-toggler-icon-2 {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    #navcol-1 {
+        margin-top: 0.5rem !important;
+    }
+}
+
+/*
+==============================================
+Header Styles
+==============================================
+ */
+#header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgba(68, 84, 105, 0.85);
+    height: 100%;
+    width: 100%;
+}
+
 #particles-canvas {
     position: absolute;
     width: 100%;
@@ -109,7 +147,7 @@ div.navbar-collapse {
     z-index: 0;
 }
 
-.clean-block.clean-hero {
+#header .clean-block.clean-hero {
     position: relative;
     text-align: center;
     display: -ms-flexbox;
@@ -121,30 +159,33 @@ div.navbar-collapse {
     padding-bottom: 0;
 }
 
-#header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: rgba(68, 84, 105, 0.85);
-    height: 100%;
-    width: 100%;
-}
-
-.headerTitle {
+#header .headerTitle {
     font-size: 40px;
-}
-
-.clean-navbar.fixed-top + .page {
-    padding-top: 0px;
 }
 
 #headerImage {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 30%;
     z-index: 1;
     top: -30px;
+}
+
+/*
+==============================================
+General Styles
+==============================================
+ */
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 
 @media (max-width: 576px) {
@@ -171,10 +212,24 @@ div.navbar-collapse {
     text-align: center;
 }
 
+/*
+==============================================
+Problem Info Section Styles
+==============================================
+ */
 #problem-info-section {
     background-color: rgb(224, 224, 224);
 }
 
+#problem-info-section .col > h5 {
+    padding-top: 30px;
+}
+
+/*
+==============================================
+Solution Info Section Styles
+==============================================
+ */
 #solution-info-section {
     padding-top: 80px;
     padding-bottom: 10px;
@@ -187,18 +242,6 @@ div.navbar-collapse {
     margin-top: 0px;
 }
 
-#deliverables-section {
-    margin-top: 0px;
-    padding-top: 80px;
-    padding-bottom: 10px;
-}
-
-#about-us-section {
-    margin-top: 0px;
-    padding-top: 80px;
-    padding-bottom: 10px;
-}
-
 .feature-box .icon {
     font-size: 30px;
     position: absolute;
@@ -209,88 +252,77 @@ div.navbar-collapse {
     color: rgb(68, 84, 105);
 }
 
-.card.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-}
-
-p.card-text {
-    margin-bottom: 30px;
-}
-
-@media (max-width: 992px) {
-    .navbar-mobile-solid {
-        background-color: rgba(68, 84, 105, 0.95);
-    }
-}
-
-.col > h5 {
-    padding-top: 30px;
-}
-
-#references-list > li {
-    margin-top: 20px;
-    word-wrap: break-word;
-}
-
-body {
-    margin: 0;
-    font-family: Lato, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
-
-.navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .5);
-    border-color: rgba(0, 0, 0, 0);
+/*
+==============================================
+Deliverables Section Styles
+==============================================
+ */
+#deliverables-section {
+    margin-top: 0px;
+    padding-top: 80px;
     padding-bottom: 10px;
-    padding-top: 10px;
 }
 
-.fas.fa-bars.navbar-toggler-icon-2 {
-    color: #fff;
-}
-
-@media (max-width: 768px) {
-    #navcol-1 {
-        margin-top: 2rem !important;
-    }
-}
-
-.text-left.deliverables-side-label {
+#deliverables-section .text-left.deliverables-side-label {
     position: relative;
     top: 50%;
 }
 
-.row.deliverables-row {
+#deliverables-section .row.deliverables-row {
     margin-top: 80px;
 }
 
-.deliverable-image {
+#deliverables-section .deliverable-image {
     width: 100%;
     transition: box-shadow 0.4s ease-in-out;
 }
 
-.deliverable-image:hover {
+#deliverables-section .deliverable-image:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
-    .deliverable-image {
+    #deliverables-section .deliverable-image {
         padding-top: 80px;
     }
 }
 
-.popup-image-link {
+#deliverables-section .popup-image-link {
     width: 100%;
     cursor: zoom-in;
 }
 
-iframe.presentation {
+#deliverables-section iframe.presentation {
     margin-bottom: 50px;
     width: 100%;
+}
+
+/*
+==============================================
+About Us Section Styles
+==============================================
+ */
+#about-us-section {
+    margin-top: 0px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+#about-us-section .card.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#about-us-section p.card-text {
+    margin-bottom: 30px;
+}
+
+/*
+==============================================
+References Section Styles
+==============================================
+ */
+#references-list > li {
+    margin-top: 20px;
+    word-wrap: break-word;
 }
