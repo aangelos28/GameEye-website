@@ -25,7 +25,7 @@ Navbar Styles
     padding-top: 0px;
 }
 
-.navbar-brand.logo:hover {
+.navbar-brand.logo:focus, .navbar-brand.logo:hover {
     color: #ffffff;
 }
 
