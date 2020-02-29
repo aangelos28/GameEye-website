@@ -199,6 +199,11 @@ body {
     font-weight: 600;
 }
 
+/* Eliminate blank space after header */
+.clean-navbar.fixed-top + .page {
+    padding-top: 0px;
+}
+
 .clean-block .block-heading p {
     max-width: 800px;
     margin: auto;
