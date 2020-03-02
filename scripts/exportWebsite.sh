@@ -7,6 +7,10 @@ mkdir -p websiteExport
 echo "Copying all HTML files..."
 cp *.html websiteExport/
 
+# Copy all necessary scripts
+mkdir -p websiteExport/scripts
+cp scripts/setPermissions.sh websiteExport/scripts
+
 # Copy all assets
 echo "Copying all assets..."
 cp -rf assets/ websiteExport/
