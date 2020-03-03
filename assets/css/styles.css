@@ -240,6 +240,15 @@ Problem Info Section Styles
 
 /*
 ==============================================
+Background Info Section Styles
+==============================================
+ */
+#gtav-figure-row {
+    margin-top: 60px;
+}
+
+/*
+==============================================
 Solution Info Section Styles
 ==============================================
  */
