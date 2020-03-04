@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 
 echo "Creating website export directory..."
-mkdir -p websiteExport
+mkdir -p dist
 
 # Copy all HTML files
 echo "Copying all HTML files..."
-cp *.html websiteExport/
+cp *.html dist/
 
 # Copy all necessary scripts
-mkdir -p websiteExport/scripts
-cp scripts/setPermissions.sh websiteExport/scripts
+mkdir -p dist/scripts
+cp scripts/setPermissions.sh dist/scripts
 
 # Copy all assets
 echo "Copying all assets..."
-cp -rf assets/ websiteExport/
+cp -rf assets/ dist/
 
-cd websiteExport || exit
+cd dist || exit
 
 # Minify all CSS
 echo -e "\nMinifying all CSS files..."
