@@ -137,33 +137,39 @@
                 <div class="col space-above-60" data-aos="fade-right">
                     <h5 class="risk-header">Technical Risks:</h5>
                     <ul class="justified-list">
-                        <li><b>T1:</b> Time constraints to learning new APIs.<br><br></li>
+                        <li><b>T1:</b> The structure of source websites changes, causing web scraping to fail.<br><br></li>
                         <li><b>T2:</b> Video game database connectivity failure.<br><br></li>
                         <li><b>T3:</b> Platform becomes so popular that the servers get flooded.<br><br></li>
                         <li><b>T4:</b> Main database fails.<br><br></li>
-                        <li><b>T5:</b> The structure of source websites changes, causing web scraping to fail.<br></li>
+                        <li><b>T5:</b> Data breach exposes user information (in our case only emails and password hashes).<br></li>
                     </ul>
                 </div>
                 <div class="col space-above-60" data-aos="fade-left">
                     <h5 class="risk-header">Customer Risks:</h5>
                     <ul class="justified-list">
                         <li>
-                            <b>C1:</b> Gamers may believe that they do not need GameEye in order to follow news of their favorite games,
+                            <b>C1:</b> Gamers may believe that they do not need GameEye in order to follow news of games that interest them,
                             as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
                         </li>
                         <li><b>C2:</b> Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
-                        <li><b>C3:</b> Data breach exposed user information (in our case, emails and password hashes).<br><br></li>
-                        <li><b>C4:</b> User does not know how to use the application.<br></li>
+                        <li><b>C3:</b> User does not know how to use the application.<br><br></li>
+                        <li><b>C4:</b> User does not like how information is categorized.<br></li>
                     </ul>
                 </div>
                 <div class="col space-above-60" data-aos="fade-right">
                     <h5 class="risk-header">Technical Risk Mitigations:</h5>
                     <ul class="justified-list">
-                        <li><b>T1:</b> Independent skills, training and practice<br><br></li>
-                        <li><b>T2:</b> No mitigation; beyond control<br><br></li>
-                        <li><b>T3:</b> Make solution scalable; use load balancers, have multiple backend servers and multiple database servers<br><br></li>
-                        <li><b>T4:</b> Have more instances of the main database<br><br></li>
-                        <li><b>T5:</b> Scrape RSS feeds, which are far less likely to change<br></li>
+                        <li><b>T1:</b> Scrape RSS feeds, which are far less likely to change.<br><br></li>
+                        <li><b>T2:</b> Build our own video game database, but this is difficult; otherwise beyond control.<br><br></li>
+                        <li><b>T3:</b> Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
+                        <li>
+                            <b>T4:</b> Cache some content on user's device so that the application does not appear blank; have more instances
+                            of the main database for redundancy.<br><br>
+                        </li>
+                        <li>
+                            <b>T5:</b> Store less sensitive information; use database encryption; use 3rd party authentication provider
+                            to transfer some risk to them.<br>
+                        </li>
                     </ul>
                 </div>
                 <div class="col space-above-60" data-aos="fade-left">
@@ -176,11 +182,11 @@
                             <b>C2:</b> GameEye is not meant to be a replacement for video game news websites, as such,
                             it provides links to already existing news sources which increases traffic to them.<br><br>
                         </li>
+                        <li><b>C3:</b> Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
                         <li>
-                            <b>C3:</b> Store less sensitive info; use a 3rd party authentication provider; do penetration testing;
-                            use database encryption<br><br>
+                            <b>C4:</b> Provide the ability for users to create their own categories; this would be a premium feature under a paid
+                            user plan because it would be expensive for us otherwise.<br><br>
                         </li>
-                        <li><b>C4:</b> Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
                     </ul>
                 </div>
             </div>
