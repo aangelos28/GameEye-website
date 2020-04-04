@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# This script exports the content of the website and does minification and optimization
+# of JavaScript and CSS.
+
 echo "Creating website export directory..."
 mkdir -p dist
 

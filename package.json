@@ -6,6 +6,7 @@
     "google-closure-compiler": "^20200224.0.0"
   },
   "scripts": {
-    "export": "scripts/exportWebsite.sh"
+    "export": "scripts/exportWebsite.sh",
+    "deployAtria": "scripts/deployWebsiteAtria.sh"
   }
 }
