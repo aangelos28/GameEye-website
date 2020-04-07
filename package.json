@@ -7,6 +7,6 @@
   },
   "scripts": {
     "export": "scripts/exportWebsite.sh",
-    "deployAtria": "scripts/deployWebsiteAtria.sh"
+    "deployWebsite": "scripts/deployWebsite.sh"
   }
 }

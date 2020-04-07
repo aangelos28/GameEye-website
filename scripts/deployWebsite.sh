@@ -15,14 +15,14 @@ echo "Creating tar archive of exported website..."
 cd dist/ || (echo "Please export the website first" && return)
 tar -cvzf $WEBSITE_ARCHIVE_NAME *
 
-echo -e "\nPurging old website content from Atria...\n"
+echo -e "\nPurging old website content from $REMOTE_SERVER_NAME...\n"
 ssh -T $REMOTE_SERVER_CONNECTION_STRING << EOF
   cd $REMOTE_SERVER_DEPLOYMENT_PATH || (echo "Could not find website directory on Atria" && return)
   rm -rf *
   exit
 EOF
 
-echo -e "\nUploading website archive to Atria...\n"
+echo -e "\nUploading website archive to $REMOTE_SERVER_NAME...\n"
 sftp $REMOTE_SERVER_CONNECTION_STRING << EOF
   cd $REMOTE_SERVER_DEPLOYMENT_PATH || return
   put $WEBSITE_ARCHIVE_NAME
@@ -41,4 +41,4 @@ EOF
 echo -e "\nDeleting local website archive...\n"
 rm $WEBSITE_ARCHIVE_NAME
 
-echo -e "\nFinished deploying website to Atria.\n"
+echo -e "\nFinished deploying website to $REMOTE_SERVER_NAME.\n"
