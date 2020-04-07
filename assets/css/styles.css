@@ -294,7 +294,15 @@ Deliverables Section Styles
     text-align: center;
 }
 
+.user-story-subheading {
+    font-weight: bold;
+}
+
 #risk-matrix-label {
+    margin-bottom: 40px;
+}
+
+#user-stories-label {
     margin-bottom: 40px;
 }
 

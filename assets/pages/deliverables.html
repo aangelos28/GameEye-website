@@ -126,71 +126,297 @@
                 </div>
             </div>
 
-            <!-- Risk Matrix -->
+            <!-- User Stories -->
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                <h3 id="risk-matrix-label" class="text-center deliverables-center-label">Risk Matrix</h3>
-                <div class="col text-center" data-aos="fade">
-                    <img id="risk-matrix" src="../img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
+                <h3 id="user-stories-label" class="text-center deliverables-center-label">User Stories</h3>
+                <div class="col">
+                    <!-- Guest -->
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h4 class="card-title">Guest</h4>
+                                    <hr>
+                                    <h6 class="user-story-subheading">Application Information</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to see instructions on how to use the application.</li>
+                                        <li>I would like to be directed to a landing page upon visiting the website where I can learn more about the
+                                            application.
+                                        </li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Privileges</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to create an account on GameEye and become a registered user.</li>
+                                        <li>I must not be able to access other user accounts.</li>
+                                        <li>I must not be able to use GameEye unless registered.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registered User -->
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h4 class="card-title">Registered User</h4>
+                                    <hr>
+                                    <h6 class="user-story-subheading">Account Management & Login</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to login.</li>
+                                        <li>I would like to be able to set security questions.</li>
+                                        <li>I would like to be able to automatically login without needing to type my credentials again (SSO).</li>
+                                        <li>I would like to be able to enable Two-Factor Authentication (2FA).</li>
+                                        <li>I would like to be able to create and modify my profile information.</li>
+                                        <li>I would like to be able to recover my password in case I forget it.</li>
+                                        <li>I would like to be able to change my password.</li>
+                                        <li>I would like to create an account using my email as a username.</li>
+                                        <li>
+                                            I would like to be able to associate my Google or social media accounts with GameEye and be able to login using
+                                            them.
+                                        </li>
+                                        <li>I would like the option to delete my account.</li>
+                                        <li>I must not be able to delete other user accounts.</li>
+                                        <li>I would like my password to be securely stored and my privacy rights respected.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Searching</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to search for games to watch/follow.</li>
+                                        <li>I would like to have my search queries autocompleted by the application</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Game Watchlist & New Game Content</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to add games to my watchlist to stay updated about them.</li>
+                                        <li>I would like to see new game content organized in categories.</li>
+                                        <li>I would like to have the option to filter out unimportant content (such as fan art).</li>
+                                        <li>I would like to see all the recent news articles about each game in my watchlist.</li>
+                                        <li>I would like aggregated news articles to show the name of the source and how long ago it was published.</li>
+                                        <li>I would like aggregated news articles to include a thumbnail image associated with the content if one exists.</li>
+                                        <li>I would like to see all the recent game updates about each game in my watchlist.</li>
+                                        <li>I would like to see all the recent official Tweets about each game in my watchlist.</li>
+                                        <li>I would like aggregated Tweets to include a thumbnail image associated with the content if one exists.</li>
+                                        <li>I would like to see all the recent posts on the official subreddits about each game in my watchlist.</li>
+                                        <li>I would like aggregated Reddit posts to include a thumbnail image associated with the content if one exists.</li>
+                                        <li>I would like aggregated videos to include a thumbnail image associated with the content if one exists.</li>
+                                        <li>I would like to see a collection of aggregated images about each game in my watchlist.</li>
+                                        <li>I would like to see a collection of aggregated official videos about each game in my watchlist.</li>
+                                        <li>
+                                            I would like to have the option to see archives of past video game content (such as older news articles, Tweets,
+                                            etc.).
+                                        </li>
+                                        <li>I would like to be able to determine how old past news must be before being hidden.</li>
+                                        <li>
+                                            I would like to be redirected to the source site upon clicking/touching an aggregated element (i.e. news article,
+                                            Tweet, etc.).
+                                        </li>
+                                        <li>
+                                            I would like to see a ranking of the most watched games on the platform, which I can use to find out about
+                                            potentially good games.
+                                        </li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Notifications</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to receive push-notifications about new video game content.</li>
+                                        <li>I would like to see a UI count of how much new content is available for each game in my watchlist.</li>
+                                        <li>
+                                            I would like to see a UI count of how much new content for each category is available for each game in my
+                                            watchlist.
+                                        </li>
+                                        <li>
+                                            I would like to be able choose the content categories to be notified about (i.e. news articles, game updates,
+                                            Tweets, Reddit posts, etc.).
+                                        </li>
+                                        <li>I would like to choose how often to receive notifications (i.e. daily, on specific days, or weekly).</li>
+                                        <li>I would like to see push notifications across all the platforms where I have the application installed.</li>
+                                        <li>I would like to be able to submit feedback and crash data from my device to help resolve issues.</li>
+                                        <li>I would like to be notified about suggested video games to follow/watch.</li>
+                                        <li>I would like to customize where I receive notifications (i.e. email, push notifications).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tester -->
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tester</h4>
+                                    <hr>
+                                    <h6 class="user-story-subheading">Privileges</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to do everything a guest can do.</li>
+                                        <li>I would like to be able to do everything a registered user can do.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Database Simulation</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to change today's date to see how well the application works across different times.</li>
+                                        <li>I would like to be able to change to language to see how well the application works and looks across different languages.</li>
+                                        <li>I would like to be able to clean the database of simulated and temporary test data.</li>
+                                        <li>I would like to be able to simulate a main database connection failure.</li>
+                                        <li>I would like to be able to simulate a video game database connection failure.</li>
+                                        <li>I would like to be able to prepopulate the database with simulated/mock data.</li>
+                                        <li>I would like to be able to simulate the release of a new article, Tweet, Reddit post, or other content type for the database.</li>
+                                        <li>I would like to view recent articles and test data stored in the database.</li>
+                                        <li>I would like to access an archive of the simulated data.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Cross-Platform Simulation</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to simulate different operating systems to make sure functionality is intact (i.e. Android/iOS, Windows, Linux, macOS).</li>
+                                        <li>I would like to simulate different browsers to make sure functionality is intact as a progressive web application.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Notification Simulation</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to simulate push-notifications to the user.</li>
+                                        <li>I would like to simulate notifications from different content categories. </li>
+                                        <li>I would like to simulate cross-platform notification over different devices.</li>
+                                        <li>I would like to modify how often notifications are sent to me for testing purposes.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Watchlist Simulation</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to add a game from the mock database to my watchlist.</li>
+                                        <li>I would like to remove a game from my watchlist.</li>
+                                        <li>I would like to be able to simulate the release of a new article, Tweet, Reddit post, or other content type for a game in my watchlist.</li>
+                                        <li>I would like to create a mock news article to link to my watchlist.</li>
+                                        <li>I would like to set the thumbnail image for a mock news article.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">User Simulation and Application Data</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to view metrics about the backend and frontend resource utilization (CPU, RAM, disk, etc.).</li>
+                                        <li>I must not be able to delete actual user accounts. </li>
+                                        <li>I would like to be able to change user settings in a test environment.</li>
+                                        <li>I would like to simulate the creation of a new account as a guest.</li>
+                                        <li>I would like to be able to effectively navigate between different pages within the application.</li>
+                                        <li>I would like to be able to switch between being a guest and registered user.</li>
+                                        <li>I would like to simulate a login for a registered user.</li>
+                                        <li>I would like to be able to mock user interaction with the interface.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Administrator/Developer -->
+                    <div class="card shadow p-3 mb-5 bg-white rounded">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h4 class="card-title">Administrator/Developer</h4>
+                                    <hr>
+                                    <h6 class="user-story-subheading">Privileges</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to do everything a guest can do.</li>
+                                        <li>I would like to be able to do everything a registered user can do.</li>
+                                        <li>I would like to be able to do everything a tester can do.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Account Management</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to add a new user account.</li>
+                                        <li>I would like to be able to delete user accounts.</li>
+                                        <li>I would like to be able to control user accounts within reason.</li>
+                                        <li>I would like to be able to suspend user accounts.</li>
+                                        <li>I would like to be able to reactivate user accounts (in case they were suspended for any reason).</li>
+                                        <li>I must not be able to delete user accounts without documented reason.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Game Content</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to add new video game content categories.</li>
+                                        <li>I would like to be able to suppress/hide certain aggregated video game content (e.g. because of profanity, ESRB rating)</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Statistics and Application Information</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to see analytics and usage statistics about the application.</li>
+                                        <li>I would like to be able to receive and view error/crash reports from user devices.</li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Development Pipeline</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to easily deploy code changes and see the changes reflected immediately on user devices (possible because of PWA).</li>
+                                        <li>
+                                            I would like to have continuous integration that runs automated tests on the codebase whenever a merge on master
+                                            or otherwise a primary development branch occurs.
+                                        </li>
+                                    </ul>
+                                    <h6 class="user-story-subheading">Infrastructure and Database Management</h6>
+                                    <ul class="card-text">
+                                        <li>I would like to be able to directly access and modify the database.</li>
+                                        <li>I would like to be able to directly access infrastructure servers.</li>
+                                        <li>I would like to able to manage load balancers and easily horizontally scale servers (backend, database, etc.) if necessary.</li>
+                                        <li>I would like to be able to set user account permissions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Matrix -->
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                    <h3 id="risk-matrix-label" class="text-center deliverables-center-label">Risk Matrix</h3>
+                    <div class="col text-center" data-aos="fade">
+                        <img id="risk-matrix" src="../img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
+                    <div class="col space-above-60" data-aos="fade-right">
+                        <h5 class="risk-header">Technical Risks:</h5>
+                        <ul class="justified-list">
+                            <li><b>T1:</b> The structure of source websites changes, causing web scraping to fail.<br><br></li>
+                            <li><b>T2:</b> Video game database connectivity failure.<br><br></li>
+                            <li><b>T3:</b> Platform becomes so popular that the servers get flooded.<br><br></li>
+                            <li><b>T4:</b> Main database fails.<br><br></li>
+                            <li><b>T5:</b> Data breach exposes user information (in our case only emails and password hashes).<br></li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60" data-aos="fade-left">
+                        <h5 class="risk-header">Customer Risks:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>C1:</b> Gamers may believe that they do not need GameEye in order to follow news of games that interest them,
+                                as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
+                            </li>
+                            <li><b>C2:</b> Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
+                            <li><b>C3:</b> User does not know how to use the application.<br><br></li>
+                            <li><b>C4:</b> User does not like how information is categorized.<br></li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60" data-aos="fade-right">
+                        <h5 class="risk-header">Technical Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li><b>T1:</b> Scrape RSS feeds, which are far less likely to change.<br><br></li>
+                            <li><b>T2:</b> Build our own video game database, but this is difficult; otherwise beyond control.<br><br></li>
+                            <li><b>T3:</b> Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
+                            <li>
+                                <b>T4:</b> Cache some content on user's device so that the application does not appear blank; have more instances
+                                of the main database for redundancy.<br><br>
+                            </li>
+                            <li>
+                                <b>T5:</b> Store less sensitive information; use database encryption; use 3rd party authentication provider
+                                to transfer some risk to them.<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60" data-aos="fade-left">
+                        <h5 class="risk-header">Customer Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>C1:</b> GameEye provides features that its competition may lack, such as noise filtering and the ability to track
+                                games.<br><br>
+                            </li>
+                            <li>
+                                <b>C2:</b> GameEye is not meant to be a replacement for video game news websites, as such,
+                                it provides links to already existing news sources which increases traffic to them.<br><br>
+                            </li>
+                            <li><b>C3:</b> Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
+                            <li>
+                                <b>C4:</b> Provide the ability for users to create their own categories; this would be a premium feature under a paid
+                                user plan because it would be expensive for us otherwise.<br><br>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
-                <div class="col space-above-60" data-aos="fade-right">
-                    <h5 class="risk-header">Technical Risks:</h5>
-                    <ul class="justified-list">
-                        <li><b>T1:</b> The structure of source websites changes, causing web scraping to fail.<br><br></li>
-                        <li><b>T2:</b> Video game database connectivity failure.<br><br></li>
-                        <li><b>T3:</b> Platform becomes so popular that the servers get flooded.<br><br></li>
-                        <li><b>T4:</b> Main database fails.<br><br></li>
-                        <li><b>T5:</b> Data breach exposes user information (in our case only emails and password hashes).<br></li>
-                    </ul>
-                </div>
-                <div class="col space-above-60" data-aos="fade-left">
-                    <h5 class="risk-header">Customer Risks:</h5>
-                    <ul class="justified-list">
-                        <li>
-                            <b>C1:</b> Gamers may believe that they do not need GameEye in order to follow news of games that interest them,
-                            as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
-                        </li>
-                        <li><b>C2:</b> Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
-                        <li><b>C3:</b> User does not know how to use the application.<br><br></li>
-                        <li><b>C4:</b> User does not like how information is categorized.<br></li>
-                    </ul>
-                </div>
-                <div class="col space-above-60" data-aos="fade-right">
-                    <h5 class="risk-header">Technical Risk Mitigations:</h5>
-                    <ul class="justified-list">
-                        <li><b>T1:</b> Scrape RSS feeds, which are far less likely to change.<br><br></li>
-                        <li><b>T2:</b> Build our own video game database, but this is difficult; otherwise beyond control.<br><br></li>
-                        <li><b>T3:</b> Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
-                        <li>
-                            <b>T4:</b> Cache some content on user's device so that the application does not appear blank; have more instances
-                            of the main database for redundancy.<br><br>
-                        </li>
-                        <li>
-                            <b>T5:</b> Store less sensitive information; use database encryption; use 3rd party authentication provider
-                            to transfer some risk to them.<br>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col space-above-60" data-aos="fade-left">
-                    <h5 class="risk-header">Customer Risk Mitigations:</h5>
-                    <ul class="justified-list">
-                        <li>
-                            <b>C1:</b> GameEye provides features that its competition may lack, such as noise filtering and the ability to track games.<br><br>
-                        </li>
-                        <li>
-                            <b>C2:</b> GameEye is not meant to be a replacement for video game news websites, as such,
-                            it provides links to already existing news sources which increases traffic to them.<br><br>
-                        </li>
-                        <li><b>C3:</b> Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
-                        <li>
-                            <b>C4:</b> Provide the ability for users to create their own categories; this would be a premium feature under a paid
-                            user plan because it would be expensive for us otherwise.<br><br>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 
