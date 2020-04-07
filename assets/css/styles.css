@@ -294,6 +294,20 @@ Deliverables Section Styles
     text-align: center;
 }
 
+#work-breakdown-structure-label {
+    margin-bottom: 40px;
+}
+
+#work-breakdown-structure {
+    width: 85%;
+    height: auto;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+#work-breakdown-structure:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .user-story-subheading {
     font-weight: bold;
 }
