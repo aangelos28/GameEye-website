@@ -17,7 +17,7 @@ tar -cvzf $WEBSITE_ARCHIVE_NAME *
 
 echo -e "\nPurging old website content from $REMOTE_SERVER_NAME...\n"
 ssh -T $REMOTE_SERVER_CONNECTION_STRING << EOF
-  cd $REMOTE_SERVER_DEPLOYMENT_PATH || (echo "Could not find website directory on Atria" && return)
+  cd $REMOTE_SERVER_DEPLOYMENT_PATH || (echo "Could not find website directory on $REMOTE_SERVER_NAME" && return)
   rm -rf *
   exit
 EOF

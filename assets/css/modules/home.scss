@@ -1,0 +1,124 @@
+/*
+==============================================
+Header Styles
+==============================================
+ */
+#header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgba(68, 84, 105, 0.85);
+  height: 100%;
+  width: 100%;
+}
+
+#particles-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#header .clean-block.clean-hero {
+  position: relative;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+#header .headerTitle {
+  font-size: 40px;
+}
+
+#headerImage {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  z-index: 1;
+  top: -30px;
+}
+
+/*
+==============================================
+Problem Info Section Styles
+==============================================
+ */
+#problem-info-section {
+  background-color: rgb(224, 224, 224);
+}
+
+#problem-info-section .col > h5 {
+  padding-top: 30px;
+}
+
+/*
+==============================================
+Background Info Section Styles
+==============================================
+ */
+#gtav-figure-row {
+  margin-top: 60px;
+}
+
+/*
+==============================================
+Solution Info Section Styles
+==============================================
+ */
+#solution-info-section {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+
+#solution-features {
+  padding-top: 80px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+
+.feature-box .icon {
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 30px;
+  text-align: center;
+  color: rgb(68, 84, 105);
+}
+
+/*
+==============================================
+About Us Section Styles
+==============================================
+ */
+#about-us-section {
+  margin-top: 0px;
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+#about-us-section .card.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+#about-us-section p.card-text {
+  margin-bottom: 30px;
+}
+
+/*
+==============================================
+References Section Styles
+==============================================
+ */
+#references-list > li {
+  margin-top: 20px;
+  word-wrap: break-word;
+}
