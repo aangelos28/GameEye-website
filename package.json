@@ -4,11 +4,11 @@
   "dependencies": {
     "clean-css-cli": "^4.3.0",
     "google-closure-compiler": "^20200224.0.0",
-    "scss": "^0.2.4"
+    "node-sass": "^4.13.1"
   },
   "scripts": {
     "export": "scripts/exportWebsite.sh",
-    "deployWebsite": "scripts/deployWebsite.sh",
+    "deploy": "scripts/deployWebsite.sh",
     "compileStyles": "scripts/compileStyles.sh"
   }
 }
