@@ -18,7 +18,15 @@ cp scripts/setPermissions.sh dist/scripts
 echo "Copying all assets..."
 cp -rf assets/ dist/
 
-cd dist || exit
+cd dist || (echo "Could not find the dist directory" && return)
+
+# Compile styles.scss
+echo -e "\nCompiling styles.scss..."
+cd assets/css || (echo "Could not find the dist/assets/css directory" && return)
+sass styles.scss styles.css
+echo "Deleting scss files..."
+rm -rf styles.scss styles.css.map modules/
+cd ../../
 
 # Minify all CSS
 echo -e "\nMinifying all CSS files..."

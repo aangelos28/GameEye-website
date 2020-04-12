@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "dependencies": {
     "clean-css-cli": "^4.3.0",
-    "google-closure-compiler": "^20200224.0.0"
+    "google-closure-compiler": "^20200224.0.0",
+    "scss": "^0.2.4"
   },
   "scripts": {
     "export": "scripts/exportWebsite.sh",
-    "deployWebsite": "scripts/deployWebsite.sh"
+    "deployWebsite": "scripts/deployWebsite.sh",
+    "compileStyles": "scripts/compileStyles.sh"
   }
 }
