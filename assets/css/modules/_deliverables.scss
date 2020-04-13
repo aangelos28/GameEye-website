@@ -107,45 +107,46 @@ Sidemenu Styles
   border: 1px solid rgba(0, 0, 0, .2);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px), (max-height: 480px) {
   .sidemenu {
     display: none;
   }
 }
 
 .sidemenu-content {
-  top: 20%;
   position: relative;
-  margin-right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 20px;
 }
 
-.sidemenu-content > a {
-  text-decoration: none;
-  color: rgb(68, 84, 105);
+.sidemenu-item {
+  height: 8vh;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.sidemenu-item.top {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.sidemenu-item:hover {
+  background-color: rgb(68, 84, 105);
+  transition: all 0.4s ease;
+}
+
+.sidemenu-item:hover .sidemenu-link {
+  color: #f1f1f1;
+  transition: all 0.1s ease;
 }
 
 .sidemenu-link {
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-left: 12px;
-  display: block;
+  font-size: 0.8vw;
+  color: rgb(68, 84, 105);
 }
 
-.sidemenu-link.animation {
-  position: relative;
-}
-
-.sidemenu-link.animation:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(68, 84, 105);
-  transition: width 0.4s ease;
-}
-
-.sidemenu-link.animation:hover:before {
-  width: 60%;
+.sidemenu-content > .sidemenu-item > a {
+  text-decoration: none;
 }
