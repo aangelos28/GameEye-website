@@ -16,6 +16,7 @@ Deliverables Section Styles
 
 #deliverables-section .text-center.deliverables-center-label {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 #work-breakdown-structure-label {
@@ -46,6 +47,10 @@ Deliverables Section Styles
 
 #deliverables-section .row.deliverables-row {
   margin-top: 80px;
+}
+
+#deliverables-section .row.deliverables-row.top {
+  margin-top: 40px;
 }
 
 #risk-matrix {
@@ -85,8 +90,15 @@ Deliverables Section Styles
 .anchor-offset {
   display: block;
   position: relative;
-  top: -100px;
   visibility: hidden;
+}
+
+#feasibility-presentation-v2.anchor-offset {
+  top: -100px;
+}
+
+#current-process-flow-diagram.anchor-offset {
+  top: -100px;
 }
 
 /*
@@ -124,7 +136,6 @@ Sidemenu Styles
   height: 8vh;
   padding-left: 12px;
   display: flex;
-  align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
@@ -145,6 +156,9 @@ Sidemenu Styles
 .sidemenu-link {
   font-size: 0.8vw;
   color: rgb(68, 84, 105);
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 
 .sidemenu-content > .sidemenu-item > a {
