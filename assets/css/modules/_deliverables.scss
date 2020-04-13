@@ -137,6 +137,7 @@ Sidemenu Styles
   padding-left: 12px;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
+  transition: all 0.4s ease;
 }
 
 .sidemenu-item.top {
@@ -159,6 +160,7 @@ Sidemenu Styles
   display: flex;
   align-items: center;
   flex: 1;
+  transition: all 0.1s ease;
 }
 
 .sidemenu-content > .sidemenu-item > a {
