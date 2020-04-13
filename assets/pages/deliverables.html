@@ -56,22 +56,35 @@
     </div>
 </nav>
 
+<div class="sidemenu shadow rounded bg-white">
+    <div class="sidemenu-content">
+        <a class="sidemenu-link animation" href="#feasibility-presentation">Feasibility Presentation</a>
+        <a class="sidemenu-link animation" href="#current-process-flow-diagram">Current Process Flow Diagram</a>
+        <a class="sidemenu-link animation" href="#solution-process-flow-diagram">Solution Process Flow Diagram</a>
+        <a class="sidemenu-link animation" href="#mfc-diagram">Major Functional Component Diagram</a>
+        <a class="sidemenu-link animation" href="#competition-matrix">Competition Matrix</a>
+        <a class="sidemenu-link animation" href="#work-breakdown-structure-anchor">Work Breakdown Structure</a>
+        <a class="sidemenu-link animation" href="#user-stories-anchor">User Stories</a>
+        <a class="sidemenu-link animation" href="#risk-matrix-anchor">Risk Matrix</a>
+    </div>
+</div>
+
 <!-- Main Page Content -->
 <main class="page landing-page">
     <!-- Deliverables Section -->
     <section id="deliverables-section" class="clean-block deliverables">
         <div class="container">
-            <div data-aos="fade" data-aos-duration="600" class="block-heading">
+            <div class="block-heading">
                 <h2 class="text-info">Deliverables</h2>
             </div>
 
             <!-- Feasibility Presentation iframe -->
-            <div class="row">
+            <div id="feasibility-presentation" class="row">
                 <div class="col text-center">
-                    <iframe class="presentation"
+                    <!--<iframe class="presentation"
                             src="https://onedrive.live.com/embed?cid=95A56A126CFA2EC1&resid=95A56A126CFA2EC1%216394&authkey=AKCdw_t47zzvZRU&em=2"
                             width="1200" height="700">
-                    </iframe>
+                    </iframe>-->
                 </div>
             </div>
 
@@ -79,11 +92,12 @@
 
             <!-- Other Deliverables -->
             <!-- Current Process Flow Diagram -->
+            <a class="anchor-offset" id="current-process-flow-diagram"></a>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-                <div class="col align-self-center" data-aos="fade-right">
+                <div class="col align-self-center">
                     <h4 class="text-left deliverables-side-label">Current Process Flow Diagram</h4>
                 </div>
-                <div class="col align-self-center" data-aos="fade-left">
+                <div class="col align-self-center">
                     <a class="popup-image-link" href="../img/deliverables/CurrentProcessFlowDiagram.jpg">
                         <img class="deliverable-image popup-image" src="../img/deliverables/CurrentProcessFlowDiagram.jpg" alt="CurrentProcessFlowDiagram">
                     </a>
@@ -91,11 +105,12 @@
             </div>
 
             <!-- Solution Process Flow Diagram -->
+            <a class="anchor-offset" id="solution-process-flow-diagram"></a>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 deliverables-row">
-                <div class="col align-self-center" data-aos="fade-right">
+                <div class="col align-self-center">
                     <h4 class="text-left deliverables-side-label">Solution Process Flow Diagram</h4>
                 </div>
-                <div class="col align-self-center" data-aos="fade-left">
+                <div class="col align-self-center">
                     <a class="popup-image-link" href="../img/deliverables/SolutionProcessFlowDiagram.jpg">
                         <img class="deliverable-image" src="../img/deliverables/SolutionProcessFlowDiagram.jpg" alt="SolutionProcessFlowDiagram">
                     </a>
@@ -103,11 +118,12 @@
             </div>
 
             <!-- Major Functional Component Diagram -->
+            <a class="anchor-offset" id="mfc-diagram"></a>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 deliverables-row">
-                <div class="col align-self-center" data-aos="fade-right">
+                <div class="col align-self-center">
                     <h4 class="text-left deliverables-side-label">Major Functional Component Diagram</h4>
                 </div>
-                <div class="col align-self-center" data-aos="fade-left">
+                <div class="col align-self-center">
                     <a class="popup-image-link" href="../img/deliverables/MFCDiagram.jpg">
                         <img class="deliverable-image" src="../img/deliverables/MFCDiagram.jpg" alt="MajorFunctionalComponentDiagram">
                     </a>
@@ -115,11 +131,12 @@
             </div>
 
             <!-- Competition Matrix -->
+            <a class="anchor-offset" id="competition-matrix"></a>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 deliverables-row">
-                <div class="col align-self-center" data-aos="fade-right">
+                <div class="col align-self-center">
                     <h4 class="text-left deliverables-side-label">Competition Matrix</h4>
                 </div>
-                <div class="col align-self-center" data-aos="fade-left">
+                <div class="col align-self-center">
                     <a class="popup-image-link" href="../img/deliverables/CompetitionMatrix.jpg">
                         <img class="deliverable-image" src="../img/deliverables/CompetitionMatrix.jpg" alt="CompetitionMatrix">
                     </a>
@@ -127,9 +144,10 @@
             </div>
 
             <!-- Work Breakdown Structure -->
+            <a class="anchor-offset" id="work-breakdown-structure-anchor"></a>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                <h3 id="work-breakdown-structure-label" class="text-center deliverables-center-label">Work Breakdown Structure</h3>
-                <div class="col text-center" data-aos="fade">
+                <h3 class="text-center deliverables-center-label">Work Breakdown Structure</h3>
+                <div class="col text-center">
                     <a class="popup-image-link" href="../img/deliverables/WorkBreakdownStructure.jpg">
                         <img id="work-breakdown-structure" src="../img/deliverables/WorkBreakdownStructure.jpg" alt="WorkBreakdownStructure">
                     </a>
@@ -137,6 +155,7 @@
             </div>
 
             <!-- User Stories -->
+            <a class="anchor-offset" id="user-stories-anchor"></a>
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
                 <h3 id="user-stories-label" class="text-center deliverables-center-label">User Stories</h3>
                 <div class="col">
@@ -362,14 +381,15 @@
                 </div>
 
                 <!-- Risk Matrix -->
+                <a class="anchor-offset" id="risk-matrix-anchor"></a>
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
                     <h3 id="risk-matrix-label" class="text-center deliverables-center-label">Risk Matrix</h3>
-                    <div class="col text-center" data-aos="fade">
+                    <div class="col text-center">
                         <img id="risk-matrix" src="../img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
-                    <div class="col space-above-60" data-aos="fade-right">
+                    <div class="col space-above-60">
                         <h5 class="risk-header">Technical Risks:</h5>
                         <ul class="justified-list">
                             <li><b>T1:</b> The structure of source websites changes, causing web scraping to fail.<br><br></li>
@@ -379,7 +399,7 @@
                             <li><b>T5:</b> Data breach exposes user information (in our case only emails and password hashes).<br></li>
                         </ul>
                     </div>
-                    <div class="col space-above-60" data-aos="fade-left">
+                    <div class="col space-above-60">
                         <h5 class="risk-header">Customer Risks:</h5>
                         <ul class="justified-list">
                             <li>
@@ -391,7 +411,7 @@
                             <li><b>C4:</b> User does not like how information is categorized.<br></li>
                         </ul>
                     </div>
-                    <div class="col space-above-60" data-aos="fade-right">
+                    <div class="col space-above-60">
                         <h5 class="risk-header">Technical Risk Mitigations:</h5>
                         <ul class="justified-list">
                             <li><b>T1:</b> Scrape RSS feeds, which are far less likely to change.<br><br></li>
@@ -407,7 +427,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col space-above-60" data-aos="fade-left">
+                    <div class="col space-above-60">
                         <h5 class="risk-header">Customer Risk Mitigations:</h5>
                         <ul class="justified-list">
                             <li>
@@ -442,7 +462,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<script src="../js/scrollAnimations.js"></script>
 
 <script>
     // Initialize popups

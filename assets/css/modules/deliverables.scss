@@ -81,3 +81,71 @@ Deliverables Section Styles
   margin-bottom: 50px;
   width: 100%;
 }
+
+.anchor-offset {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/*
+==============================================
+Sidemenu Styles
+==============================================
+ */
+.sidemenu {
+  height: 80%;
+  margin-top: 120px;
+  margin-right: -20px;
+  width: 10%;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #f1f1;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+@media (max-width: 992px) {
+  .sidemenu {
+    display: none;
+  }
+}
+
+.sidemenu-content {
+  top: 20%;
+  position: relative;
+  margin-right: 20px;
+}
+
+.sidemenu-content > a {
+  text-decoration: none;
+  color: rgb(68, 84, 105);
+}
+
+.sidemenu-link {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  display: block;
+}
+
+.sidemenu-link.animation {
+  position: relative;
+}
+
+.sidemenu-link.animation:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(68, 84, 105);
+  transition: width 0.4s ease;
+}
+
+.sidemenu-link.animation:hover:before {
+  width: 60%;
+}
