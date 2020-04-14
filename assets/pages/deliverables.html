@@ -563,7 +563,7 @@
                             <li><b>T1: </b>The structure of source websites changes, causing web scraping to fail.<br><br></li>
                             <li><b>T2: </b>Video game database connectivity failure.<br><br></li>
                             <li><b>T3: </b>Platform becomes so popular that the servers get flooded.<br><br></li>
-                            <li><b>T4: </b>Main database fails.<br><br></li>
+                            <li><b>T4: </b>Main database (GameEye database) fails.<br><br></li>
                             <li><b>T5: </b>Data breach exposes user information (in our case only emails and password hashes).<br></li>
                         </ul>
                     </div>
@@ -571,7 +571,9 @@
                         <h5 class="risk-header">Technical Risk Mitigations:</h5>
                         <ul class="justified-list">
                             <li><b>T1: </b>Scrape RSS feeds, which are far less likely to change.<br><br></li>
-                            <li><b>T2: </b>Build our own video game database, but this is difficult; otherwise beyond control.<br><br></li>
+                            <li><b>T2: </b>Store video game database content on our own database for redundancy or build our own video game database,
+                                but the latter is difficult.<br><br>
+                            </li>
                             <li><b>T3: </b>Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
                             <li>
                                 <b>T4: </b>Cache some content on user's device so that the application does not appear blank; have more instances
