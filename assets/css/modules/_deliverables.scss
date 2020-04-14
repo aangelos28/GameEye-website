@@ -93,6 +93,21 @@ Deliverables Section Styles
   top: -80px;
 }
 
+@media (max-width: 430px) {
+  #sitemap li {
+    font-size: 10px;
+  }
+  #sitemap ul {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 275px) {
+  #sitemap ul {
+    padding-left: 8px;
+  }
+}
+
 /*
 ==============================================
 Sidemenu Styles
