@@ -14,7 +14,7 @@ Deliverables Section Styles
   top: 50%;
 }
 
-#deliverables-section .text-center.deliverables-center-label {
+#deliverables-section .deliverables-center-label {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -31,14 +31,6 @@ Deliverables Section Styles
 
 .user-story-subheading {
   font-weight: bold;
-}
-
-#risk-matrix-label {
-  margin-bottom: 40px;
-}
-
-#user-stories-label {
-  margin-bottom: 40px;
 }
 
 #deliverables-section .row.deliverables-row {
@@ -152,6 +144,7 @@ Sidemenu Styles
 
 .sidemenu-link {
   font-size: 0.7vw;
+  font-weight: bold;
   color: rgb(68, 84, 105);
   display: flex;
   align-items: center;
