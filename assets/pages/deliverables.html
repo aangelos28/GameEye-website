@@ -414,56 +414,101 @@
                     <div class="col space-above-60">
                         <h5 class="risk-header">Technical Risks:</h5>
                         <ul class="justified-list">
-                            <li><b>T1:</b> The structure of source websites changes, causing web scraping to fail.<br><br></li>
-                            <li><b>T2:</b> Video game database connectivity failure.<br><br></li>
-                            <li><b>T3:</b> Platform becomes so popular that the servers get flooded.<br><br></li>
-                            <li><b>T4:</b> Main database fails.<br><br></li>
-                            <li><b>T5:</b> Data breach exposes user information (in our case only emails and password hashes).<br></li>
+                            <li><b>T1: </b>The structure of source websites changes, causing web scraping to fail.<br><br></li>
+                            <li><b>T2: </b>Video game database connectivity failure.<br><br></li>
+                            <li><b>T3: </b>Platform becomes so popular that the servers get flooded.<br><br></li>
+                            <li><b>T4: </b>Main database fails.<br><br></li>
+                            <li><b>T5: </b>Data breach exposes user information (in our case only emails and password hashes).<br></li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Technical Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li><b>T1: </b>Scrape RSS feeds, which are far less likely to change.<br><br></li>
+                            <li><b>T2: </b>Build our own video game database, but this is difficult; otherwise beyond control.<br><br></li>
+                            <li><b>T3: </b>Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
+                            <li>
+                                <b>T4: </b>Cache some content on user's device so that the application does not appear blank; have more instances
+                                of the main database for redundancy.<br><br>
+                            </li>
+                            <li>
+                                <b>T5: </b>Store less sensitive information; use database encryption; use 3rd party authentication provider
+                                to transfer some risk to them.<br>
+                            </li>
                         </ul>
                     </div>
                     <div class="col space-above-60">
                         <h5 class="risk-header">Customer Risks:</h5>
                         <ul class="justified-list">
                             <li>
-                                <b>C1:</b> Gamers may believe that they do not need GameEye in order to follow news of games that interest them,
+                                <b>C1: </b>Gamers may believe that they do not need GameEye in order to follow news of games that interest them,
                                 as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
                             </li>
-                            <li><b>C2:</b> Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
-                            <li><b>C3:</b> User does not know how to use the application.<br><br></li>
-                            <li><b>C4:</b> User does not like how information is categorized.<br></li>
-                        </ul>
-                    </div>
-                    <div class="col space-above-60">
-                        <h5 class="risk-header">Technical Risk Mitigations:</h5>
-                        <ul class="justified-list">
-                            <li><b>T1:</b> Scrape RSS feeds, which are far less likely to change.<br><br></li>
-                            <li><b>T2:</b> Build our own video game database, but this is difficult; otherwise beyond control.<br><br></li>
-                            <li><b>T3:</b> Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
-                            <li>
-                                <b>T4:</b> Cache some content on user's device so that the application does not appear blank; have more instances
-                                of the main database for redundancy.<br><br>
-                            </li>
-                            <li>
-                                <b>T5:</b> Store less sensitive information; use database encryption; use 3rd party authentication provider
-                                to transfer some risk to them.<br>
-                            </li>
+                            <li><b>C2: </b>Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
+                            <li><b>C3: </b>User does not know how to use the application.<br><br></li>
+                            <li><b>C4: </b>User does not like how information is categorized.<br></li>
                         </ul>
                     </div>
                     <div class="col space-above-60">
                         <h5 class="risk-header">Customer Risk Mitigations:</h5>
                         <ul class="justified-list">
                             <li>
-                                <b>C1:</b> GameEye provides features that its competition may lack, such as noise filtering and the ability to track
+                                <b>C1: </b>GameEye provides features that its competition may lack, such as noise filtering and the ability to track
                                 games.<br><br>
                             </li>
                             <li>
-                                <b>C2:</b> GameEye is not meant to be a replacement for video game news websites, as such,
+                                <b>C2: </b>GameEye is not meant to be a replacement for video game news websites, as such,
                                 it provides links to already existing news sources which increases traffic to them.<br><br>
                             </li>
-                            <li><b>C3:</b> Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
+                            <li><b>C3: </b>Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
                             <li>
-                                <b>C4:</b> Provide the ability for users to create their own categories; this would be a premium feature under a paid
+                                <b>C4: </b>Provide the ability for users to create their own categories; this would be a premium feature under a paid
                                 user plan because it would be expensive for us otherwise.<br><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Security Risks:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>S1: NoSQL Injection; </b>Malicious NoSQL queries could be injected into the application via improperly handled input data on
+                                the client to run on the database. NoSQL injections be used to modify data or execute operations on the database.<br><br>
+                            </li>
+                            <li>
+                                <b>S2: Cross-Site Scripting (XSS); </b>Malicious scripts could be injected into the browser to redirect users to potentially
+                                malicious sites and steal data.<br><br>
+                            </li>
+                            <li>
+                                <b>S3: Data Exposure; </b>Sensitive user data could be improperly transmitted or stored, allowing for potential exposure.<br><br>
+                            </li>
+                            <li>
+                                <b>S4: Broken Authentication and Session Control; </b>Poor authentication and session control can allow attackers unauthorized
+                                access to user accounts (including admin accounts) through means such as compromising user passwords or session keys.<br><br>
+                            </li>
+                            <li>
+                                <b>S5: Broken Access Control; </b>Poor access control can allow users access outside of their intended permissions, which can
+                                lead to unauthorized data modification and functionality.<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Security Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>S1: </b>Queries used to operate and build the GameEye database will not be built by concatenating strings and will utilize
+                                prepared statements and query-building mechanisms provided by MongoDB.<br><br>
+                            </li>
+                            <li><b>S2: </b>GameEye will properly sanitize and validate user inputs.<br><br></li>
+                            <li>
+                                <b>S3: </b>Sensitive user data stored within the GameEye database will be encrypted both when stored and in transit.<br><br>
+                            </li>
+                            <li>
+                                <b>S4: </b>Proper password precautions and requirements will be in place for account login alongside multi-factor
+                                authentication; session IDs will also not be stored in the URL.<br><br>
+                            </li>
+                            <li>
+                                <b>S5: </b>Access control will be enforced server-side where attackers can't access alongside using integration tests
+                                to ensure users can't access specific URLs without proper authentication.<br>
                             </li>
                         </ul>
                     </div>
