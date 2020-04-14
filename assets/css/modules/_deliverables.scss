@@ -19,17 +19,13 @@ Deliverables Section Styles
   margin-bottom: 40px;
 }
 
-#work-breakdown-structure-label {
-  margin-bottom: 40px;
-}
-
-#work-breakdown-structure {
+.deliverable-centered {
   width: 85%;
   height: auto;
   transition: box-shadow 0.4s ease-in-out;
 }
 
-#work-breakdown-structure:hover {
+.deliverable-centered:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -133,7 +129,7 @@ Sidemenu Styles
 }
 
 .sidemenu-item {
-  height: 8vh;
+  height: 6vh;
   padding-left: 12px;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -155,7 +151,7 @@ Sidemenu Styles
 }
 
 .sidemenu-link {
-  font-size: 0.8vw;
+  font-size: 0.7vw;
   color: rgb(68, 84, 105);
   display: flex;
   align-items: center;
