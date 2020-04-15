@@ -16,16 +16,12 @@ Navbar Styles
 }
 
 #navcol-1 {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 @include media-breakpoint-down(sm) {
   .navbar {
     height: 50px;
-  }
-
-  .navbar > .container {
-    padding-bottom: 18px;
   }
 
   #navcol-1 {
