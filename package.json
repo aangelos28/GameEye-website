@@ -2,6 +2,7 @@
   "name": "TeamWebsite",
   "version": "1.0.0",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "clean-css-cli": "^4.3.0",
     "google-closure-compiler": "^20200224.0.0",
     "node-sass": "^4.13.1"

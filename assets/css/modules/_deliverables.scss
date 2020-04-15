@@ -3,6 +3,12 @@
 Deliverables Section Styles
 ==============================================
  */
+.container.deliverables-container {
+  width: 75vw;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 #deliverables-section {
   margin-top: 0px;
   padding-top: 80px;
@@ -93,18 +99,12 @@ Deliverables Section Styles
   top: -80px;
 }
 
-@media (max-width: 430px) {
+@include media-breakpoint-down(sm) {
   #sitemap li {
     font-size: 10px;
   }
   #sitemap ul {
-    padding-left: 16px;
-  }
-}
-
-@media (max-width: 275px) {
-  #sitemap ul {
-    padding-left: 8px;
+    padding-left: 14px;
   }
 }
 
@@ -115,7 +115,7 @@ Sidemenu Styles
  */
 .sidemenu {
   height: 80%;
-  margin-top: 120px;
+  margin-top: 15vh;
   margin-right: -20px;
   width: 10%;
   position: fixed;
@@ -126,7 +126,7 @@ Sidemenu Styles
   border: 1px solid rgba(0, 0, 0, .2);
 }
 
-@media (max-width: 1400px), (max-height: 480px) {
+@include media-breakpoint-down(sm) {
   .sidemenu {
     display: none;
   }
@@ -140,7 +140,7 @@ Sidemenu Styles
 }
 
 .sidemenu-item {
-  height: 5.5vh;
+  height: 5.6vh;
   padding-left: 12px;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -162,13 +162,19 @@ Sidemenu Styles
 }
 
 .sidemenu-link {
-  font-size: 0.61vw;
+  font-size: 0.72vw;
   font-weight: bold;
   color: rgb(68, 84, 105);
   display: flex;
   align-items: center;
   flex: 1;
   transition: all 0.1s ease;
+}
+
+@media (max-height: 720px){
+  .sidemenu-link {
+    font-size: 0.65vw;
+  }
 }
 
 .sidemenu-content > .sidemenu-item > a {

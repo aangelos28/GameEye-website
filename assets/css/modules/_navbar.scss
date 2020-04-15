@@ -35,13 +35,13 @@ Navbar Styles
   padding-bottom: 8px;
 }
 
-@media (max-width: 360px) {
+@include media-breakpoint-down(sm)  {
   .navbar-brand.logo {
     font-size: x-large;
   }
 }
 
-@media (max-width: 360px) {
+@include media-breakpoint-down(sm)  {
   .navbar-brand.logo > img {
     width: 40px;
     margin-right: 4px;
@@ -60,16 +60,10 @@ Navbar Styles
 }
 
 /* Fix navbar jumping to smaller screen size */
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
   .container, .container-lg, .container-md, .container-sm {
     max-width: 1140px;
   }
-}
-
-div.navbar-collapse {
-  margin-top: 0px;
-  max-width: none;
-  width: 720px;
 }
 
 .nav-link {
@@ -79,7 +73,7 @@ div.navbar-collapse {
 /*
 Navlink Underline Animation
  */
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
   .nav-link.animation {
     position: relative;
   }
@@ -122,10 +116,4 @@ Navlink Underline Animation
 
 .fas.fa-bars.navbar-toggler-icon-2 {
   color: #fff;
-}
-
-@media (max-width: 992px) {
-  #navcol-1 {
-    margin-top: 0.5rem !important;
-  }
 }
