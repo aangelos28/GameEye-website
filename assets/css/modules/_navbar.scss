@@ -12,11 +12,11 @@ Navbar Styles
 }
 
 .navbar > .container {
-  padding-top: 0;
+  padding-top: 4px;
 }
 
 #navcol-1 {
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 @include media-breakpoint-down(sm) {
@@ -42,6 +42,7 @@ Navbar Styles
   font-family: 'Lato', serif;
   font-weight: 800;
   font-size: xx-large;
+  padding-top: 0;
 }
 
 .navbar-brand.logo:focus, .navbar-brand.logo:hover {
