@@ -6,10 +6,16 @@ Navbar Styles
 .navbar {
   opacity: 1;
   height: 70px;
-  min-height: 0px;
   padding-bottom: 12px;
   padding-top: 12px;
   transition: background-color 0.6s ease 0s;
+  flex-wrap: nowrap;
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar {
+    height: 50px;
+  }
 }
 
 .clean-navbar.fixed-bottom, .clean-navbar.fixed-top {
@@ -21,8 +27,6 @@ Navbar Styles
   font-family: 'Lato', serif;
   font-weight: 800;
   font-size: xx-large;
-  padding-bottom: 0px;
-  padding-top: 0px;
 }
 
 .navbar-brand.logo:focus, .navbar-brand.logo:hover {
@@ -30,9 +34,13 @@ Navbar Styles
 }
 
 .navbar-brand.logo > img {
-  width: 60px;
-  margin-right: 8px;
-  padding-bottom: 8px;
+  width: 140px;
+}
+
+@include media-breakpoint-down(sm)  {
+  .navbar-brand.logo > img {
+    width: 120px;
+  }
 }
 
 @include media-breakpoint-down(sm)  {
@@ -41,12 +49,7 @@ Navbar Styles
   }
 }
 
-@include media-breakpoint-down(sm)  {
-  .navbar-brand.logo > img {
-    width: 40px;
-    margin-right: 4px;
-    padding-bottom: 8px;
-  }
+#navcol-1 {
 }
 
 .navbar-light .navbar-nav .nav-link {
