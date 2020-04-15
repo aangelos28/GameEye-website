@@ -5,11 +5,32 @@ Navbar Styles
  */
 .navbar {
   opacity: 1;
-  height: 70px;
-  min-height: 0px;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  height: 60px;
+  padding-top: 0;
   transition: background-color 0.6s ease 0s;
+  flex-wrap: wrap;
+}
+
+.navbar > .container {
+  padding-top: 0;
+}
+
+#navcol-1 {
+  margin-top: 2px;
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar > .container {
+    padding-bottom: 18px;
+  }
+
+  #navcol-1 {
+    margin-top: 4px;
+  }
 }
 
 .clean-navbar.fixed-bottom, .clean-navbar.fixed-top {
@@ -21,8 +42,6 @@ Navbar Styles
   font-family: 'Lato', serif;
   font-weight: 800;
   font-size: xx-large;
-  padding-bottom: 0px;
-  padding-top: 0px;
 }
 
 .navbar-brand.logo:focus, .navbar-brand.logo:hover {
@@ -30,22 +49,18 @@ Navbar Styles
 }
 
 .navbar-brand.logo > img {
-  width: 60px;
-  margin-right: 8px;
-  padding-bottom: 8px;
+  width: 140px;
+}
+
+@include media-breakpoint-down(sm)  {
+  .navbar-brand.logo > img {
+    width: 120px;
+  }
 }
 
 @include media-breakpoint-down(sm)  {
   .navbar-brand.logo {
     font-size: x-large;
-  }
-}
-
-@include media-breakpoint-down(sm)  {
-  .navbar-brand.logo > img {
-    width: 40px;
-    margin-right: 4px;
-    padding-bottom: 8px;
   }
 }
 
