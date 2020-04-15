@@ -5,16 +5,31 @@ Navbar Styles
  */
 .navbar {
   opacity: 1;
-  height: 70px;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  height: 60px;
+  padding-top: 0;
   transition: background-color 0.6s ease 0s;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+.navbar > .container {
+  padding-top: 0;
+}
+
+#navcol-1 {
+  margin-top: 2px;
 }
 
 @include media-breakpoint-down(sm) {
   .navbar {
     height: 50px;
+  }
+
+  .navbar > .container {
+    padding-bottom: 18px;
+  }
+
+  #navcol-1 {
+    margin-top: 4px;
   }
 }
 
@@ -47,9 +62,6 @@ Navbar Styles
   .navbar-brand.logo {
     font-size: x-large;
   }
-}
-
-#navcol-1 {
 }
 
 .navbar-light .navbar-nav .nav-link {
