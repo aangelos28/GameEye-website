@@ -6,6 +6,8 @@
 echo "Creating website export directory..."
 mkdir -p dist
 
+scripts/compileStyles.sh
+
 # Copy all HTML files
 echo "Copying all HTML files..."
 cp *.html dist/
@@ -21,9 +23,8 @@ cp -rf assets/ dist/
 cd dist || (echo "Could not find the dist directory" && return)
 
 # Compile styles.scss
-echo -e "\nCompiling styles.scss..."
+echo -e "\nDeleting SCSS files..."
 cd assets/css || (echo "Could not find the dist/assets/css directory" && return)
-sass styles.scss styles.css
 echo "Deleting scss files..."
 rm -rf styles.scss styles.css.map modules/
 cd ../../
