@@ -33,6 +33,10 @@ Navbar Styles
   box-shadow: none;
 }
 
+.navbar-brand {
+  margin-right: 2rem;
+}
+
 .navbar-brand.logo {
   color: #ffffff;
   font-family: 'Lato', serif;
@@ -55,15 +59,10 @@ Navbar Styles
   }
 }
 
-@include media-breakpoint-down(sm)  {
-  .navbar-brand.logo {
-    font-size: x-large;
-  }
-}
-
 .navbar-light .navbar-nav .nav-link {
+  font-family: Montserrat, sans-serif;
   color: #ffffff;
-  font-size: small;
+  font-size: 11px;
   font-weight: 800;
 }
 
@@ -76,10 +75,6 @@ Navbar Styles
   .container, .container-lg, .container-md, .container-sm {
     max-width: 1140px;
   }
-}
-
-.nav-link {
-  font-family: Montserrat, sans-serif;
 }
 
 /*
