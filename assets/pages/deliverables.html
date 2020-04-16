@@ -62,13 +62,16 @@
 <!-- Side navigation menu -->
 <div class="sidemenu shadow-lg rounded bg-white">
     <div class="sidemenu-content">
-        <span class="sidemenu-item top"><a class="sidemenu-link" href="#current-process-flow-diagram">Current Process Flow Diagram</a></span>
-        <span class="sidemenu-item"><a class="sidemenu-link" href="#solution-process-flow-diagram">Solution Process Flow Diagram</a></span>
-        <span class="sidemenu-item"><a class="sidemenu-link" href="#mfc-diagram">Major Functional Component Diagram</a></span>
-        <span class="sidemenu-item"><a class="sidemenu-link" href="#competition-matrix">Competition Matrix</a></span>
+        <span class="sidemenu-item top"><a class="sidemenu-link" href="#ui-mockups-anchor">UI Mockups</a></span>
+        <span class="sidemenu-item"><a class="sidemenu-link" href="#current-process-flow-diagram-anchor">Current Process Flow Diagram</a></span>
+        <span class="sidemenu-item"><a class="sidemenu-link" href="#solution-process-flow-diagram-anchor">Solution Process Flow Diagram</a></span>
+        <span class="sidemenu-item"><a class="sidemenu-link" href="#mfc-diagram-anchor">Major Functional Component Diagram</a></span>
+        <span class="sidemenu-item"><a class="sidemenu-link" href="#competition-matrix-anchor">Competition Matrix</a></span>
         <span class="sidemenu-item"><a class="sidemenu-link" href="#work-breakdown-structure-anchor">Work Breakdown Structure</a></span>
         <span class="sidemenu-item"><a class="sidemenu-link" href="#sprint-planning-diagram-anchor">Sprint Planning Diagram</a></span>
         <span class="sidemenu-item"><a class="sidemenu-link" href="#web-scraping-flow-diagram-anchor">Web Scraping Flow Diagram</a></span>
+        <span class="sidemenu-item"><a class="sidemenu-link" href="#game-update-processing-flow-diagram-anchor">Game Update Processing Flow Diagram</a></span>
+        <span class="sidemenu-item"><a class="sidemenu-link" href="#game-update-notification-flow-diagram-anchor">Game Update Notification Flow Diagram</a></span>
         <span class="sidemenu-item"><a class="sidemenu-link" href="#sitemap-anchor">Sitemap</a></span>
         <span class="sidemenu-item"><a class="sidemenu-link" href="#user-stories-anchor">User Stories</a></span>
         <span class="sidemenu-item"><a class="sidemenu-link" href="#risk-matrix-anchor">Risk Matrix</a></span>
@@ -78,58 +81,87 @@
 <!-- Main Page Content -->
 <main class="page landing-page">
     <!-- Deliverables Section -->
-    <section id="deliverables-section" class="clean-block deliverables">
+    <section id="deliverables-section" class="clean-block">
         <div class="container deliverables-container">
 
-            <!-- Other Deliverables -->
-            <!-- Current Process Flow Diagram -->
-            <a class="anchor-offset" id="current-process-flow-diagram"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
-                <div class="col align-self-center">
-                    <h4 class="text-left deliverables-side-label">Current Process Flow Diagram</h4>
+            <!-- UI Mockups-->
+            <a class="anchor-offset" id="ui-mockups-anchor"></a>
+            <h3 class="text-center deliverables-center-label">UI Mockups</h3>
+            <div class="row row-cols-3 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 deliverables-row">
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/UIMockups/GameWatchlist.png">
+                        <img class="deliverable-centered ui-mockup" src="../img/deliverables/UIMockups/GameWatchlist.png" alt="GameWatchlistUIMockup">
+                    </a>
                 </div>
-                <div class="col align-self-center">
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/UIMockups/GameUpdateCategories.png">
+                        <img class="deliverable-centered ui-mockup" src="../img/deliverables/UIMockups/GameUpdateCategories.png" alt="GameUpdateCategoriesUIMockup">
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/UIMockups/NewsArticles.png">
+                        <img class="deliverable-centered ui-mockup" src="../img/deliverables/UIMockups/NewsArticles.png" alt="NewsArticlesUIMockup">
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-3 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 deliverables-row">
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/UIMockups/ReleaseGameUpdate.png">
+                        <img class="deliverable-centered ui-mockup" src="../img/deliverables/UIMockups/ReleaseGameUpdate.png" alt="ReleaseGameUpdateUIMockup">
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/UIMockups/DelayGameUpdate.png">
+                        <img class="deliverable-centered ui-mockup" src="../img/deliverables/UIMockups/DelayGameUpdate.png" alt="DelayGameUpdateUIMockup">
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/UIMockups/UpdateGameUpdate.png">
+                        <img class="deliverable-centered ui-mockup" src="../img/deliverables/UIMockups/UpdateGameUpdate.png" alt="UpdateGameUpdateUIMockup">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Current Process Flow Diagram -->
+            <a class="anchor-offset" id="current-process-flow-diagram-anchor"></a>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 class="text-center deliverables-center-label">Current Process Flow Diagram</h3>
+                <div class="col text-center">
                     <a class="popup-image-link" href="../img/deliverables/CurrentProcessFlowDiagram.jpg">
-                        <img class="deliverable-image popup-image" src="../img/deliverables/CurrentProcessFlowDiagram.jpg" alt="CurrentProcessFlowDiagram">
+                        <img class="deliverable-centered" src="../img/deliverables/CurrentProcessFlowDiagram.jpg" alt="CurrentProcessFlowDiagram">
                     </a>
                 </div>
             </div>
 
             <!-- Solution Process Flow Diagram -->
-            <a class="anchor-offset" id="solution-process-flow-diagram"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 deliverables-row">
-                <div class="col align-self-center">
-                    <h4 class="text-left deliverables-side-label">Solution Process Flow Diagram</h4>
-                </div>
-                <div class="col align-self-center">
+            <a class="anchor-offset" id="solution-process-flow-diagram-anchor"></a>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 class="text-center deliverables-center-label">Solution Process Flow Diagram</h3>
+                <div class="col text-center">
                     <a class="popup-image-link" href="../img/deliverables/SolutionProcessFlowDiagram.jpg">
-                        <img class="deliverable-image" src="../img/deliverables/SolutionProcessFlowDiagram.jpg" alt="SolutionProcessFlowDiagram">
-                    </a>
-                </div>
-            </div>
-
-            <!-- Major Functional Component Diagram -->
-            <a class="anchor-offset" id="mfc-diagram"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 deliverables-row">
-                <div class="col align-self-center">
-                    <h4 class="text-left deliverables-side-label">Major Functional Component Diagram</h4>
-                </div>
-                <div class="col align-self-center">
-                    <a class="popup-image-link" href="../img/deliverables/MFCDiagram.jpg">
-                        <img class="deliverable-image" src="../img/deliverables/MFCDiagram.jpg" alt="MajorFunctionalComponentDiagram">
+                        <img class="deliverable-centered" src="../img/deliverables/SolutionProcessFlowDiagram.jpg" alt="SolutionProcessFlowDiagram">
                     </a>
                 </div>
             </div>
 
             <!-- Competition Matrix -->
-            <a class="anchor-offset" id="competition-matrix"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 deliverables-row">
-                <div class="col align-self-center">
-                    <h4 class="text-left deliverables-side-label">Competition Matrix</h4>
-                </div>
-                <div class="col align-self-center">
+            <a class="anchor-offset" id="competition-matrix-anchor"></a>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 class="text-center deliverables-center-label">Competition Matrix</h3>
+                <div class="col text-center">
                     <a class="popup-image-link" href="../img/deliverables/CompetitionMatrix.jpg">
-                        <img class="deliverable-image" src="../img/deliverables/CompetitionMatrix.jpg" alt="CompetitionMatrix">
+                        <img class="deliverable-centered" src="../img/deliverables/CompetitionMatrix.jpg" alt="CompetitionMatrix">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Major Functional Component Diagram -->
+            <a class="anchor-offset" id="mfc-diagram-anchor"></a>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 class="text-center deliverables-center-label">Major Functional Component Diagram</h3>
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/MFCDiagram.jpg">
+                        <img class="deliverable-centered" src="../img/deliverables/MFCDiagram.jpg" alt="MFCDiagram">
                     </a>
                 </div>
             </div>
@@ -163,6 +195,28 @@
                 <div class="col text-center">
                     <a class="popup-image-link" href="../img/deliverables/WebScrapingFlowDiagram.jpg">
                         <img class="deliverable-centered" src="../img/deliverables/WebScrapingFlowDiagram.jpg" alt="WebScrapingFlowDiagram">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game Update Processing Flow Diagram -->
+            <a class="anchor-offset" id="game-update-processing-flow-diagram-anchor"></a>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 class="text-center deliverables-center-label">Game Update Processing Flow Diagram</h3>
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/GameUpdateProcessingFlowDiagram.jpg">
+                        <img class="deliverable-centered" src="../img/deliverables/GameUpdateProcessingFlowDiagram.jpg" alt="GameUpdateProcessingFlowDiagram">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Game Update Notification Flow Diagram -->
+            <a class="anchor-offset" id="game-update-notification-flow-diagram-anchor"></a>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                <h3 class="text-center deliverables-center-label">Game Update Notification Flow Diagram</h3>
+                <div class="col text-center">
+                    <a class="popup-image-link" href="../img/deliverables/GameUpdateNotificationFlowDiagram.jpg">
+                        <img class="deliverable-centered" src="../img/deliverables/GameUpdateNotificationFlowDiagram.jpg" alt="GameUpdateNotificationFlowDiagram">
                     </a>
                 </div>
             </div>

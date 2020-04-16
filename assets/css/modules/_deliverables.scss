@@ -3,21 +3,16 @@
 Deliverables Section Styles
 ==============================================
  */
-.container.deliverables-container {
-  width: 90vw;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 #deliverables-section {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#deliverables-section .text-left.deliverables-side-label {
-  position: relative;
-  top: 50%;
+.deliverables-container {
+  width: 90vw;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #deliverables-section .deliverables-center-label {
@@ -26,9 +21,13 @@ Deliverables Section Styles
 }
 
 .deliverable-centered {
-  width: 85%;
+  width: 80%;
   height: auto;
   transition: box-shadow 0.4s ease-in-out;
+}
+
+#deliverables-section .deliverable-centered.ui-mockup {
+  width: 75%;
 }
 
 .deliverable-centered:hover {
@@ -56,29 +55,9 @@ Deliverables Section Styles
   font-weight: 700;
 }
 
-#deliverables-section .deliverable-image {
-  width: 100%;
-  transition: box-shadow 0.4s ease-in-out;
-}
-
-#deliverables-section .deliverable-image:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-  #deliverables-section .deliverable-image {
-    padding-top: 80px;
-  }
-}
-
 #deliverables-section .popup-image-link {
   width: 100%;
   cursor: zoom-in;
-}
-
-#deliverables-section iframe.presentation {
-  margin-bottom: 50px;
-  width: 100%;
 }
 
 .anchor-offset {
@@ -87,15 +66,7 @@ Deliverables Section Styles
   visibility: hidden;
 }
 
-#feasibility-presentation-v2.anchor-offset {
-  top: -80px;
-}
-
-#feasibility-presentation-v1.anchor-offset {
-  top: -80px;
-}
-
-#current-process-flow-diagram.anchor-offset {
+#ui-mockups-anchor {
   top: -80px;
 }
 
@@ -162,7 +133,7 @@ Sidemenu Styles
 }
 
 .sidemenu-link {
-  font-size: 0.72vw;
+  font-size: 0.68vw;
   font-weight: bold;
   color: rgb(68, 84, 105);
   display: flex;
