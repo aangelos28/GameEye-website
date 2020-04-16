@@ -3,7 +3,6 @@ const onSmallScreen = window.matchMedia("(max-width: 992px)");
 
 // Transition effect for navbar
 $(document).ready(function() {
-
   if (!onSmallScreen.matches) {
     if($(this).scrollTop() > 10) {
       $('.navbar').addClass('navbar-solid');
@@ -17,6 +16,12 @@ $(document).ready(function() {
       }
     });
   }
+});
+
+// Collapse mobile navbar when clicking on a link
+$('.nav-link').click(function(){
+  const navbarToggler = $('.navbar-toggler');
+  navbarToggler.click();
 });
 
 // Click event for the header button
