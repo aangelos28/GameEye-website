@@ -20,8 +20,10 @@ $(document).ready(function() {
 
 // Collapse mobile navbar when clicking on a link
 $('.nav-link').click(function(){
-  const navbarToggler = $('.navbar-toggler');
-  navbarToggler.click();
+  if (onSmallScreen.matches) {
+    const navbarToggler = $('.navbar-toggler');
+    navbarToggler.click();
+  }
 });
 
 // Click event for the header button
