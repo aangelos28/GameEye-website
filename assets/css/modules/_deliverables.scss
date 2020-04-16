@@ -3,21 +3,16 @@
 Deliverables Section Styles
 ==============================================
  */
-.container.deliverables-container {
-  width: 90vw;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 #deliverables-section {
-  margin-top: 0px;
+  margin-top: 0;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#deliverables-section .text-left.deliverables-side-label {
-  position: relative;
-  top: 50%;
+.deliverables-container {
+  width: 90vw;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #deliverables-section .deliverables-center-label {
