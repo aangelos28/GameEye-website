@@ -25,7 +25,6 @@ cd dist || (echo "Could not find the dist directory" && return)
 # Compile styles.scss
 echo -e "\nDeleting SCSS files..."
 cd assets/css || (echo "Could not find the dist/assets/css directory" && return)
-echo "Deleting scss files..."
 rm -rf styles.scss styles.css.map modules/
 cd ../../
 
