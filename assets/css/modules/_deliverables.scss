@@ -9,7 +9,7 @@ Deliverables Section Styles
   padding-bottom: 80px;
 }
 
-.deliverables-container {
+#deliverables-section .deliverables-container {
   width: 90vw;
   padding-right: 15px;
   padding-left: 15px;
@@ -20,7 +20,7 @@ Deliverables Section Styles
   margin-bottom: 40px;
 }
 
-.deliverable-centered {
+#deliverables-section .deliverable-centered {
   width: 70%;
   height: auto;
   transition: box-shadow 0.4s ease-in-out;
@@ -30,11 +30,19 @@ Deliverables Section Styles
   width: 70%;
 }
 
-.deliverable-centered:hover {
+#deliverables-section .ui-mockups-row {
+  margin-bottom: -40px;
+}
+
+#deliverables-section .ui-mockup-column {
+  margin-bottom: 40px;
+}
+
+#deliverables-section .deliverable-centered:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.user-story-subheading {
+#deliverables-section .user-story-subheading {
   font-weight: bold;
 }
 
@@ -142,7 +150,7 @@ Sidemenu Styles
   transition: all 0.1s ease;
 }
 
-@media (max-height: 720px){
+@media (max-height: 720px) {
   .sidemenu-link {
     font-size: 0.65vw;
   }
