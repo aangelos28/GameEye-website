@@ -26,9 +26,13 @@ Deliverables Section Styles
 }
 
 .deliverable-centered {
-  width: 85%;
+  width: 80%;
   height: auto;
   transition: box-shadow 0.4s ease-in-out;
+}
+
+#deliverables-section .deliverable-centered.ui-mockup {
+  width: 75%;
 }
 
 .deliverable-centered:hover {
@@ -56,29 +60,9 @@ Deliverables Section Styles
   font-weight: 700;
 }
 
-#deliverables-section .deliverable-image {
-  width: 100%;
-  transition: box-shadow 0.4s ease-in-out;
-}
-
-#deliverables-section .deliverable-image:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-  #deliverables-section .deliverable-image {
-    padding-top: 80px;
-  }
-}
-
 #deliverables-section .popup-image-link {
   width: 100%;
   cursor: zoom-in;
-}
-
-#deliverables-section iframe.presentation {
-  margin-bottom: 50px;
-  width: 100%;
 }
 
 .anchor-offset {
@@ -87,15 +71,7 @@ Deliverables Section Styles
   visibility: hidden;
 }
 
-#feasibility-presentation-v2.anchor-offset {
-  top: -80px;
-}
-
-#feasibility-presentation-v1.anchor-offset {
-  top: -80px;
-}
-
-#current-process-flow-diagram-anchor {
+#ui-mockups-anchor {
   top: -80px;
 }
 
