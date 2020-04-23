@@ -61,6 +61,63 @@ Navbar Styles
 }
 
 /*
+Nav Dropdown
+ */
+/* The dropdown container */
+.nav-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Nav Dropdown button */
+.nav-dropdown .nav-dropdown-button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.nav-dropdown-content {
+  position: absolute;
+  background-color: rgba(68, 84, 105, 0.95);
+  width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+/* Links inside the dropdown */
+.nav-dropdown-content a {
+  font-family: Montserrat, sans-serif;
+  float: none;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  display: block;
+  opacity: 0;
+  text-align: left;
+  transition: opacity 0.1s ease;
+}
+
+/* Show the dropdown menu on hover */
+.nav-dropdown:hover .nav-dropdown-content {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.nav-dropdown:hover .nav-dropdown-content a {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  transition-delay: 0.2s;
+}
+
+/*
 Navlink Underline Animation
  */
 @include media-breakpoint-up(lg) {
