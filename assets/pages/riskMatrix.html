@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Deliverables - Team Yellow</title>
+    <meta name="description" content="Lists the deliverables for the project.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="552x328" href="../img/logos/GameEyeLogoColor.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar navbar-solid navbar-mobile-solid">
+    <div class="container">
+        <a class="navbar-brand logo" href="../../index.html">
+            <img src="../img/logos/GameEyeLogoFull.png" alt="GameEye logo white">
+        </a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fas fa-bars navbar-toggler-icon-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto mobile-solid">
+                <li class="nav-item text-white">
+                    <a class="nav-link animation" href="../../index.html#header">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animation" href="../../index.html#problem-info-section">Problem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animation" href="../../index.html#solution-info-section">Solution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animation" href="presentations.html">Presentations</a>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <button class="nav-link nav-dropdown-button animation">
+                        Deliverables
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="nav-dropdown-content">
+                        <a href="diagrams.html">Diagrams & Competition Matrix</a>
+                        <a href="databaseSchema.html">Database Schema</a>
+                        <a href="riskMatrix.html">Risk Matrix</a>
+                        <a href="userStories.html">User Stories</a>
+                        <a href="sitemap.html">Sitemap</a>
+                        <a href="glossary.html">Glossary</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animation" href="../../index.html#about-us-section">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animation" href="../../index.html#references-section">References</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Page Content -->
+<main class="page landing-page">
+    <!-- Deliverables Section -->
+    <section id="deliverables-section" class="clean-block">
+        <div class="container deliverables-container">
+
+                <!-- Risk Matrix -->
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                    <h3 class="text-center deliverables-center-label">Risk Matrix</h3>
+                    <div class="col text-center">
+                        <img id="risk-matrix" src="../img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Technical Risks:</h5>
+                        <ul class="justified-list">
+                            <li><b>T1: </b>The structure of source websites changes, causing web scraping to fail.<br><br></li>
+                            <li><b>T2: </b>Video game database connectivity failure.<br><br></li>
+                            <li><b>T3: </b>Platform becomes so popular that the servers get flooded.<br><br></li>
+                            <li><b>T4: </b>Main database (GameEye database) fails.<br><br></li>
+                            <li><b>T5: </b>Data breach exposes user information (in our case only emails and password hashes).<br></li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Technical Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li><b>T1: </b>Scrape RSS feeds, which are far less likely to change.<br><br></li>
+                            <li><b>T2: </b>Store video game database content on our own database for redundancy or build our own video game database,
+                                but the latter is difficult.<br><br>
+                            </li>
+                            <li><b>T3: </b>Make solution scalable; use load balancers, have multiple backend servers and multiple database servers.<br><br></li>
+                            <li>
+                                <b>T4: </b>Cache content on user's device so that the application does not appear blank; have more instances
+                                of the main database for redundancy.<br><br>
+                            </li>
+                            <li>
+                                <b>T5: </b>Store less sensitive information; use database encryption; use 3rd party authentication provider
+                                to transfer some risk to them.<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Customer Risks:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>C1: </b>Gamers may believe that they do not need GameEye in order to follow news of games that interest them,
+                                as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
+                            </li>
+                            <li><b>C2: </b>Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
+                            <li><b>C3: </b>User does not know how to use the application.<br><br></li>
+                            <li><b>C4: </b>User does not like how information is categorized.<br></li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Customer Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>C1: </b>GameEye provides features that its competition may lack, such as noise filtering and the ability to track
+                                games.<br><br>
+                            </li>
+                            <li>
+                                <b>C2: </b>GameEye is not meant to be a replacement for video game news websites, as such,
+                                it provides links to already existing news sources which increases traffic to them.<br><br>
+                            </li>
+                            <li><b>C3: </b>Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
+                            <li>
+                                <b>C4: </b>Provide the ability for users to create their own categories; this would be a premium feature under a paid
+                                user plan because it would be expensive for us otherwise.<br><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Security Risks:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>S1: NoSQL Injection; </b>Malicious NoSQL queries could be injected into the application via improperly handled input data on
+                                the client to run on the database. NoSQL injections be used to modify data or execute operations on the database.<br><br>
+                            </li>
+                            <li>
+                                <b>S2: Cross-Site Scripting (XSS); </b>Malicious scripts could be injected into the browser to redirect users to potentially
+                                malicious sites and steal data.<br><br>
+                            </li>
+                            <li>
+                                <b>S3: Data Exposure; </b>Sensitive user data could be improperly transmitted or stored, allowing for potential exposure.<br><br>
+                            </li>
+                            <li>
+                                <b>S4: Broken Authentication and Session Control; </b>Poor authentication and session control can allow attackers unauthorized
+                                access to user accounts (including admin accounts) through means such as compromising user passwords or session keys.<br><br>
+                            </li>
+                            <li>
+                                <b>S5: Broken Access Control; </b>Poor access control can allow users access outside of their intended permissions, which can
+                                lead to unauthorized data modification and functionality.<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col space-above-60">
+                        <h5 class="risk-header">Security Risk Mitigations:</h5>
+                        <ul class="justified-list">
+                            <li>
+                                <b>S1: </b>Queries used to operate and build the GameEye database will not be built by concatenating strings and will utilize
+                                prepared statements and query-building mechanisms provided by MongoDB.<br><br>
+                            </li>
+                            <li><b>S2: </b>GameEye will properly sanitize and validate user inputs.<br><br></li>
+                            <li>
+                                <b>S3: </b>Sensitive user data stored within the GameEye database will be encrypted both when stored and in transit.<br><br>
+                            </li>
+                            <li>
+                                <b>S4: </b>Proper password precautions and requirements will be in place for account login alongside multi-factor
+                                authentication; session IDs will also not be stored in the URL.<br><br>
+                            </li>
+                            <li>
+                                <b>S5: </b>Access control will be enforced server-side where attackers can't access alongside using integration tests
+                                to ensure users can't access specific URLs without proper authentication.<br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="page-footer dark">
+    <div class="footer-copyright">
+        <p>© 2020 CS410 Team Yellow</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="../js/navbar.js"></script>
+
+</body>
+
+</html>

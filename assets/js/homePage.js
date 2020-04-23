@@ -19,7 +19,7 @@ $(document).ready(function() {
 });
 
 // Collapse mobile navbar when clicking on a link
-$('.nav-link').click(function(){
+$('.nav-link:not(.nav-dropdown-button)').click(function() {
   if (onSmallScreen.matches) {
     const navbarToggler = $('.navbar-toggler');
     navbarToggler.click();

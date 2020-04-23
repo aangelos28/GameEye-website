@@ -5,7 +5,7 @@ Deliverables Section Styles
  */
 #deliverables-section {
   margin-top: 0;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 80px;
 }
 
@@ -63,6 +63,11 @@ Deliverables Section Styles
   font-weight: 700;
 }
 
+#database-schema {
+  width: 100%;
+  height: auto;
+}
+
 #deliverables-section .popup-image-link {
   width: 100%;
   cursor: zoom-in;
@@ -76,6 +81,7 @@ Deliverables Section Styles
 
 #ui-mockups-anchor {
   top: -80px;
+  margin-top: 80px;
 }
 
 @include media-breakpoint-down(sm) {
