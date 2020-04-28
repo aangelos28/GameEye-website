@@ -92,13 +92,8 @@ Deliverables Section Styles
   margin-top: 80px;
 }
 
-@include media-breakpoint-down(sm) {
-  #sitemap li {
-    font-size: 10px;
-  }
-  #sitemap ul {
-    padding-left: 14px;
-  }
+#sitemap-toplevel-anchor {
+  top: -80px;
 }
 
 /*
