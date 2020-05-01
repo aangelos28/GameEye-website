@@ -6,18 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Sitemap - Team Yellow</title>
-    <meta name="description" content="A sitemap of the web application.">
+    <title>Database Schema - Team Yellow</title>
+    <meta name="description" content="The MongoDB database schema that the application will use.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="552x328" href="../img/logos/GameEyeLogoColor.png">
+    <link rel="icon" type="image/png" sizes="552x328" href="../../assets/img/logos/GameEyeLogoColor.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar navbar-solid navbar-mobile-solid">
     <div class="container">
         <a class="navbar-brand logo" href="../../index.html">
-            <img src="../img/logos/GameEyeLogoFull.png" alt="GameEye logo white">
+            <img src="../../assets/img/logos/GameEyeLogoFull.png" alt="GameEye logo white">
         </a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
             <span class="sr-only">Toggle navigation</span>
@@ -71,52 +71,19 @@
     </div>
 </nav>
 
-<!-- Side navigation menu -->
-<div class="sidemenu shadow-lg rounded bg-white">
-    <div class="sidemenu-content">
-        <span class="sidemenu-item top"><a class="sidemenu-link" href="#sitemap-toplevel-anchor">Sitemap Top Level</a></span>
-        <span class="sidemenu-item"><a class="sidemenu-link" href="#sitemap-watchlist-anchor">Sitemap Watchlist</a></span>
-        <span class="sidemenu-item"><a class="sidemenu-link" href="#sitemap-settings-anchor">Sitemap Settings</a></span>
-    </div>
-</div>
-
 <!-- Main Page Content -->
 <main class="page landing-page">
     <section id="deliverables-section" class="clean-block">
         <div class="container deliverables-container">
-            <!-- Sitemap Top Level -->
-            <a class="anchor-offset" id="sitemap-toplevel-anchor"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                <h3 class="text-center deliverables-center-label">Sitemap Top Level</h3>
-                <div class="col text-center">
-                    <a class="popup-image-link" href="../img/deliverables/sitemap/TopLevel.jpg">
-                        <img class="deliverable-centered" src="../img/deliverables/sitemap/TopLevel.jpg" alt="SitemapTopLevel">
-                    </a>
-                </div>
-            </div>
 
-            <!-- Sitemap Watchlist -->
-            <a class="anchor-offset" id="sitemap-watchlist-anchor"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                <h3 class="text-center deliverables-center-label">Sitemap Watchlist</h3>
-                <div class="col text-center">
-                    <a class="popup-image-link" href="../img/deliverables/sitemap/Watchlist.jpg">
-                        <img class="deliverable-centered" src="../img/deliverables/sitemap/Watchlist.jpg" alt="SitemapWatchlist">
-                    </a>
+                <!-- Database Schema -->
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
+                    <h3 class="text-center deliverables-center-label">Database Schema</h3>
+                    <div class="col text-center">
+                        <img id="database-schema" src="../../assets/img/deliverables/DatabaseSchema.png" alt="DatabaseSchema">
+                    </div>
                 </div>
             </div>
-
-            <!-- Sitemap Watchlist -->
-            <a class="anchor-offset" id="sitemap-settings-anchor"></a>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                <h3 class="text-center deliverables-center-label">Sitemap Settings</h3>
-                <div class="col text-center">
-                    <a class="popup-image-link" href="../img/deliverables/sitemap/Settings.jpg">
-                        <img class="deliverable-centered" src="../img/deliverables/sitemap/Settings.jpg" alt="SitemapSettings">
-                    </a>
-                </div>
-            </div>
-        </div>
     </section>
 </main>
 
@@ -130,19 +97,7 @@
 <!-- JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<script src="../js/navbar.js"></script>
-
-<script>
-    // Initialize popups
-    $(document).ready(function () {
-        $('.image-link').magnificPopup({type: 'image'});
-    });
-
-    $('.popup-image-link').magnificPopup({
-        type: 'image'
-    });
-</script>
+<script src="../../assets/js/navbar.js"></script>
 
 </body>
 

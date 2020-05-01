@@ -11,6 +11,7 @@ scripts/compileStyles.sh
 # Copy all HTML files
 echo "Copying all HTML files..."
 cp *.html dist/
+cp -rf pages/ dist/
 
 # Copy all necessary scripts
 mkdir -p dist/scripts
