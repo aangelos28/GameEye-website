@@ -87,6 +87,10 @@ Deliverables Section Styles
   visibility: hidden;
 }
 
+.presentation-anchor-offset {
+  top: -80px;
+}
+
 #current-process-flow-diagram-anchor {
   top: -80px;
 }
@@ -98,6 +102,18 @@ Deliverables Section Styles
 
 #sitemap-toplevel-anchor {
   top: -80px;
+}
+
+iframe.presentation {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 70vh;
+}
+
+embed.pdf {
+  margin-bottom: 50px;
+  width: 75%;
+  height: 80vh;
 }
 
 /*
@@ -133,6 +149,7 @@ Sidemenu Styles
 
 .sidemenu-item {
   height: 5.6vh;
+  min-height: 30px;
   padding-left: 12px;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -154,7 +171,7 @@ Sidemenu Styles
 }
 
 .sidemenu-link {
-  font-size: 0.68vw;
+  font-size: max(8px, 0.68vw);
   font-weight: bold;
   color: rgb(68, 84, 105);
   display: flex;
@@ -165,7 +182,7 @@ Sidemenu Styles
 
 @media (max-height: 720px) {
   .sidemenu-link {
-    font-size: 0.65vw;
+    font-size: max(7px, 0.65vw);
   }
 }
 
