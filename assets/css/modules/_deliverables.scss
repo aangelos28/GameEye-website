@@ -7,58 +7,59 @@ Deliverables Section Styles
   margin-top: 0;
   padding-top: 20px;
   padding-bottom: 80px;
+  min-height: 100vh;
 }
 
-#deliverables-section .deliverables-container {
+.deliverables-container {
   width: 95vw;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-#deliverables-section .deliverables-center-label {
+.deliverables-center-label {
   text-align: center;
   margin-bottom: 40px;
 }
 
-#deliverables-section .deliverable-centered {
+.deliverable-centered {
   width: 70%;
   height: auto;
   transition: box-shadow 0.4s ease-in-out;
 }
 
-#deliverables-section .deliverable-centered.ui-mockup {
+.deliverable-centered.ui-mockup {
   width: 70%;
 }
 
-#deliverables-section .ui-mockups-row {
+.ui-mockups-row {
   margin-bottom: -40px;
 }
 
-#deliverables-section .ui-mockup-column {
+.ui-mockup-column {
   margin-bottom: 40px;
 }
 
-#deliverables-section .deliverable-centered:hover {
+.deliverable-centered:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-#deliverables-section .user-story-subheading {
+.user-story-subheading {
   font-weight: bold;
 }
 
-#deliverables-section .glossary-subheading {
+.glossary-subheading {
   font-weight: bold;
 }
 
-#deliverables-section .glossary-description {
+.glossary-description {
   padding-left: 20px;
 }
 
-#deliverables-section .row.deliverables-row {
+.row.deliverables-row {
   margin-top: 80px;
 }
 
-#deliverables-section .row.deliverables-row.top {
+.row.deliverables-row.top {
   margin-top: 40px;
 }
 
@@ -71,12 +72,12 @@ Deliverables Section Styles
   font-weight: 700;
 }
 
-#database-schema {
+.deliverable-full-width {
   width: 100%;
   height: auto;
 }
 
-#deliverables-section .popup-image-link {
+.popup-image-link {
   width: 100%;
   cursor: zoom-in;
 }
@@ -87,17 +88,21 @@ Deliverables Section Styles
   visibility: hidden;
 }
 
-#current-process-flow-diagram-anchor {
+.anchor-offset.top {
   top: -80px;
+}
+
+#design-presentation-anchor {
+  top: -160px;
 }
 
 #ui-mockups-anchor {
-  top: -80px;
   margin-top: 80px;
 }
 
-#sitemap-toplevel-anchor {
-  top: -80px;
+iframe.presentation {
+  width: 100%;
+  height: 70vh;
 }
 
 /*
@@ -133,6 +138,7 @@ Sidemenu Styles
 
 .sidemenu-item {
   height: 5.6vh;
+  min-height: 30px;
   padding-left: 12px;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -149,12 +155,12 @@ Sidemenu Styles
 }
 
 .sidemenu-item:hover .sidemenu-link {
-  color: #f1f1f1;
+  color: #ffff;
   transition: all 0.1s ease;
 }
 
 .sidemenu-link {
-  font-size: 0.68vw;
+  font-size: max(8px, 0.68vw);
   font-weight: bold;
   color: rgb(68, 84, 105);
   display: flex;
@@ -165,10 +171,43 @@ Sidemenu Styles
 
 @media (max-height: 720px) {
   .sidemenu-link {
-    font-size: 0.65vw;
+    font-size: max(7px, 0.65vw);
   }
 }
 
 .sidemenu-content > .sidemenu-item > a {
   text-decoration: none;
+}
+
+/*
+==============================================
+RWP vs Prototype Features Table Styles
+==============================================
+ */
+.table .thead-dark th {
+  background-color: rgb(68, 84, 105);
+  color: #ffff
+}
+
+.table td.category {
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.table td.green {
+  background-color: #007864;
+  color: #ffff;
+  border-right: 1px solid #dee2e6;
+}
+
+.table td.orange {
+  background-color: #cb7629;
+  color: #ffff;
+  border-right: 1px solid #dee2e6;
+}
+
+.table td.red {
+  background-color: #932f2b;
+  color: #ffff;
+  border-right: 1px solid #dee2e6;
 }

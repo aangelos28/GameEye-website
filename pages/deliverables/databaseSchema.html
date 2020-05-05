@@ -10,14 +10,14 @@
     <meta name="description" content="The MongoDB database schema that the application will use.">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="552x328" href="../img/logos/GameEyeLogoColor.png">
+    <link rel="icon" type="image/png" sizes="552x328" href="../../assets/img/logos/GameEyeLogoColor.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar navbar-solid navbar-mobile-solid">
     <div class="container">
         <a class="navbar-brand logo" href="../../index.html">
-            <img src="../img/logos/GameEyeLogoFull.png" alt="GameEye logo white">
+            <img src="../../assets/img/logos/GameEyeLogoFull.png" alt="GameEye logo white">
         </a>
         <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
             <span class="sr-only">Toggle navigation</span>
@@ -35,12 +35,6 @@
             <ul class="nav navbar-nav ml-auto mobile-solid">
                 <li class="nav-item text-white">
                     <a class="nav-link animation" href="../../index.html#header">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link animation" href="../../index.html#problem-info-section">Problem</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link animation" href="../../index.html#solution-info-section">Solution</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link animation" href="presentations.html">Presentations</a>
@@ -60,11 +54,22 @@
                         <a href="glossary.html">Glossary</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link animation" href="../../index.html#about-us-section">About Us</a>
+                <li class="nav-item nav-dropdown">
+                    <button class="nav-link nav-dropdown-button animation">
+                        Prototype
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="nav-dropdown-content">
+                        <a href="../prototype/rwpVsPrototype.html">RWP vs Prototype</a>
+                        <a href="../prototype/sprintPlan.html">Sprint Plan</a>
+                        <a href="../prototype/userStories.html">User Stories</a>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link animation" href="../../index.html#references-section">References</a>
+                    <a class="nav-link animation" href="../labs.html">Labs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animation" href="../../index.html#about-us-section">About Us</a>
                 </li>
             </ul>
         </div>
@@ -75,12 +80,11 @@
 <main class="page landing-page">
     <section id="deliverables-section" class="clean-block">
         <div class="container deliverables-container">
-
                 <!-- Database Schema -->
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
                     <h3 class="text-center deliverables-center-label">Database Schema</h3>
                     <div class="col text-center">
-                        <img id="database-schema" src="../img/deliverables/DatabaseSchema.png" alt="DatabaseSchema">
+                        <img class="deliverable-full-width" src="../../assets/img/deliverables/DatabaseSchema.png" alt="DatabaseSchema">
                     </div>
                 </div>
             </div>
@@ -90,14 +94,14 @@
 <!-- Footer -->
 <footer class="page-footer dark">
     <div class="footer-copyright">
-        <p>© 2020 CS410 Team Yellow</p>
+        <p>Copyright © 2020 CS410-411 Team Yellow</p>
     </div>
 </footer>
 
 <!-- JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="../js/navbar.js"></script>
+<script src="../../assets/js/navbar.js"></script>
 
 </body>
 
