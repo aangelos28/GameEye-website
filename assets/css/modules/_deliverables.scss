@@ -178,3 +178,36 @@ Sidemenu Styles
 .sidemenu-content > .sidemenu-item > a {
   text-decoration: none;
 }
+
+/*
+==============================================
+RWP vs Prototype Features Table Styles
+==============================================
+ */
+.table .thead-dark th {
+  background-color: rgb(68, 84, 105);
+  color: #ffff
+}
+
+.table td.category {
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.table td.green {
+  background-color: #007864;
+  color: #ffff;
+  border-right: 1px solid #dee2e6;
+}
+
+.table td.orange {
+  background-color: #cb7629;
+  color: #ffff;
+  border-right: 1px solid #dee2e6;
+}
+
+.table td.red {
+  background-color: #932f2b;
+  color: #ffff;
+  border-right: 1px solid #dee2e6;
+}
