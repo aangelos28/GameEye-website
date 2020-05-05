@@ -211,3 +211,13 @@ RWP vs Prototype Features Table Styles
   color: #ffff;
   border-right: 1px solid #dee2e6;
 }
+
+@include media-breakpoint-down(sm) {
+  .table .thead-dark th {
+    font-size: 11px;
+  }
+
+  .table td {
+    font-size: 11px;
+  }
+}
