@@ -5,7 +5,7 @@
 # Requires an active website export in the dist/ directory to work.
 # This script does not automatically export the website.
 
-REMOTE_SERVER_USERNAME="410yello"
+REMOTE_SERVER_USERNAME="411yello"
 REMOTE_SERVER_NAME="atria.cs.odu.edu"
 REMOTE_SERVER_CONNECTION_STRING=${REMOTE_SERVER_USERNAME}@${REMOTE_SERVER_NAME}
 REMOTE_SERVER_DEPLOYMENT_PATH="secure_html"
