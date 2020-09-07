@@ -1,4 +1,4 @@
-# CS410 Team Yellow Website
+# CS411W Team Yellow Website
 
 ## Requirements & Installation
 In order to export the website you will need:
