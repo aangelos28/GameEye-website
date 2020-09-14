@@ -3,6 +3,6 @@
   font-size: 20px;
 }
 
-li:not(:last-child) {
+li.report-link:not(:last-child) {
   margin-bottom: 8px;
 }
