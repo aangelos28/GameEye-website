@@ -21,11 +21,21 @@ iframe.pdf {
   line-height: max(40px, 4vh);
 }
 
+.lab-button:not(:last-child)  {
+  margin-bottom: 10px;
+}
+
 .lab-button:hover {
   background-color: #ffff;
   color: rgb(68, 84, 105);
   transition: all 0.4s ease;
   text-decoration: none;
+}
+
+.lab-button[disabled], .lab-button[disabled]:hover {
+  background-color: #afafaf;
+  pointer-events: none;
+  border: 2px solid #0000;
 }
 
 #individual-labs {
