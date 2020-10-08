@@ -83,15 +83,15 @@
         <div class="container deliverables-container">
             <!-- RWP vs Prototype Features -->
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                <h3 class="text-center deliverables-center-label">RWP vs Prototype Features</h3>
+                <h3 class="text-center deliverables-center-label">Prototype Features Table</h3>
                 <div class="col text-center">
 
                     <table class="table table-responsive-sm">
                         <thead class="thead-dark">
                         <tr>
                             <th scope="col" class="text-left">Feature</th>
-                            <th scope="col">RWP</th>
-                            <th scope="col">Prototype</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Implementation</th>
                         </tr>
                         </thead>
 
@@ -101,52 +101,36 @@
                         </tr>
                         <tr>
                             <td class="text-left">Cross-Platform Support (Desktop, Mobile)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Ability to use GameEye on desktop and mobile devices.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
-                        <tr>
-                            <td class="text-left">Offline Support</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Local Caching</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Connection Interruption Resiliency</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-
                         <tr>
                             <td class="category" colspan=3>Authentication</td>
                         </tr>
                         <tr>
                             <td class="text-left">User Login</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Access an existing account on GameEye.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         <tr>
                             <td class="text-left">User Registration</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Create an account on GameEye.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         <tr>
                             <td class="text-left">External Provider Login & Registration</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Login with a Google or Microsoft account. If logging in for the first time on GameEye, an account is automatically created.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         <tr>
                             <td class="text-left">Persistent Sessions</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Access account without having to log in again after closing GameEye without logging out and reopening it.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         <tr>
                             <td class="text-left">Password Recovery</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Send a link to the user’s email address that allows them to reset their password.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
 
                         <tr>
@@ -154,18 +138,13 @@
                         </tr>
                         <tr>
                             <td class="text-left">Change Profile Information</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">Allow users to change their name and email address.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         <tr>
                             <td class="text-left">Change Password</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Delete Account</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
+                            <td class="text-left">Allow users to change their password while logged in.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
 
                         <tr>
@@ -173,13 +152,13 @@
                         </tr>
                         <tr>
                             <td class="text-left">Search for Games</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Allow users to search for video games to add to their watchlist.</td>
+                            <td class="orange align-middle">Partial Functionality: searching mechanisms will be fully functional but not all games will be available</td>
                         </tr>
                         <tr>
                             <td class="text-left">Search Autocompletion</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Search results appear based on characters typed in the watchlist search bar (e.g. Hollow Knight and Hollow Knight: Silksong appear when “Hollow Kn” is typed in the search bar).</td>
+                            <td class="orange align-middle">Partial Functionality: autocompletion mechanisms will be fully functional but not all games will be available</td>
                         </tr>
 
                         <tr>
@@ -187,97 +166,57 @@
                         </tr>
                         <tr>
                             <td class="text-left">Add Games to Watchlist</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Allow users to add games to their personal watchlist.</td>
+                            <td class="orange align-middle">Partial Functionality: Not all games will be available</td>
                         </tr>
                         <tr>
                             <td class="text-left">News Articles (Web Scraping)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Tweets (Web Scraping)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Reddit Posts (Web Scraping)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Images (Web Scraping)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Videos (Web Scraping)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
+                            <td class="text-left">Web scraping used to obtain news articles about video games by scraping popular gaming news websites.</td>
+                            <td class="orange align-middle">Partial Functionality: not all intended news websites will be scraped</td>
                         </tr>
                         <tr>
                             <td class="text-left">Resource Thumbnails (Includes Website Logos)</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Display thumbnails for various resources such as news articles. These are scraped images. News website logos are also collected and displayed next to articles.</td>
+                            <td class="orange align-middle">Partial Functionality: not all resources will be implemented, only news articles. Not all news websites will be used.</td>
                         </tr>
                         <tr>
                             <td class="text-left">Game Thumbnails</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Display images that represent a game. Shown in the watchlist, title bar, and search results.</td>
+                            <td class="orange align-middle">Partial Functionality: not all games will be available</td>
                         </tr>
                         <tr>
                             <td class="text-left">Source Website Redirection</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Redirect a user to the official news article page when clicking on a news article inside GameEye.</td>
+                            <td class="orange align-middle">Partial Functionality: not all news websites will be available</td>
                         </tr>
                         <tr>
                             <td class="text-left">Resource Organization</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Archived Resources</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
+                            <td class="text-left">The various resources will be organized by they type (e.g. news articles, tweets, etc.).</td>
+                            <td class="orange align-middle">Partial Functionality: only news websites will be available</td>
                         </tr>
                         <tr>
                             <td class="text-left">Most-Watched Games List</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">A list of the most-watched games by GameEye users.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
 
                         <tr>
                             <td class="category" colspan=3>Settings</td>
                         </tr>
                         <tr>
-                            <td class="text-left">Show Archived Resources Option</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
                             <td class="text-left">Show Impact Scores Option</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Users can choose whether or not they want to see the impact scores of a resource.</td>
+                            <td class="orange align-middle">Partial Functionality: only for news websites</td>
                         </tr>
                         <tr>
                             <td class="text-left">Impact Score Levels Option</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Users can choose for which impact scores to receive notifications for.</td>
+                            <td class="orange align-middle">Partial Functionality: only for news websites</td>
                         </tr>
                         <tr>
                             <td class="text-left">Receive Notifications Option</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Receive Notifications Per Resource Category Option</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Submit Feedback</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
+                            <td class="text-left">Users can choose whether or not they want to receive notifications.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
 
                         <tr>
@@ -285,18 +224,8 @@
                         </tr>
                         <tr>
                             <td class="text-left">Impact Scoring</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Resource Classification</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Important Information Extraction</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
+                            <td class="text-left">Machine learning is used to give a score to a resource based on how impactful it is.</td>
+                            <td class="orange align-middle">Partial Functionality: only for news articles, not enough training data to get the desired accuracy</td>
                         </tr>
 
                         <tr>
@@ -304,28 +233,23 @@
                         </tr>
                         <tr>
                             <td class="text-left">Push-Notifications for New Resources</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">Users will receive push-notifications when new resources have been scraped.</td>
+                            <td class="orange align-middle">Partial Functionality: only for news articles</td>
                         </tr>
                         <tr>
                             <td class="text-left">UI Count of Notifications for Each Game</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
+                            <td class="text-left">An indicator showing how many unseen notifications there are for each game in a user's watchlist.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         <tr>
                             <td class="text-left">UI Count of Notifications for Each Resource Category</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="orange">Partial Functionality</td>
+                            <td class="text-left">An indicator showing how many unseen notifications there are for each resource category.</td>
+                            <td class="orange align-middle">Partial Functionality: only news articles</td>
                         </tr>
                         <tr>
                             <td class="text-left">Cross-Platform Notifications</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="green">Full Functionality</td>
-                        </tr>
-                        <tr>
-                            <td class="text-left">Suggested Video Game Notifications</td>
-                            <td class="green">Full Functionality</td>
-                            <td class="red">No Functionality</td>
+                            <td class="text-left">Notifications will be received in both the desktop and mobile versions of GameEye.</td>
+                            <td class="green align-middle">Full Functionality</td>
                         </tr>
                         </tbody>
                     </table>
