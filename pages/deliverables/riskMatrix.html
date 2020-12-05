@@ -85,20 +85,25 @@
 
                 <!-- Risk Matrix -->
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 deliverables-row">
-                    <h3 class="text-center deliverables-center-label">Risk Matrix</h3>
+                    <h3 class="text-center deliverables-center-label">Risk Matrix (Initial)</h3>
                     <div class="col text-center">
-                        <img id="risk-matrix" src="../../assets/img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
+                        <img class="risk-matrix" src="../../assets/img/deliverables/RiskMatrix.jpg" alt="RiskMatrix">
+                    </div>
+                    <hr>
+                    <h3 class="text-center deliverables-center-label">Risk Matrix (Prototype)</h3>
+                    <div class="col text-center">
+                        <img class="risk-matrix" src="../../assets/img/deliverables/prototype/RiskMatrixPrototype.jpg" alt="RiskMatrixPrototype">
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
                     <div class="col space-above-60">
                         <h5 class="risk-header">Technical Risks:</h5>
                         <ul class="justified-list">
-                            <li><b>T1: </b>The structure of source websites changes, causing web scraping to fail.<br><br></li>
-                            <li><b>T2: </b>Video game database connectivity failure.<br><br></li>
+                            <li class="green"><b>T1: </b>The structure of source websites changes, causing web scraping to fail (addressed).<br><br></li>
+                            <li class="green"><b>T2: </b>Video game database connectivity failure (addressed).<br><br></li>
                             <li><b>T3: </b>Platform becomes so popular that the servers get flooded.<br><br></li>
                             <li><b>T4: </b>Main database (GameEye database) fails.<br><br></li>
-                            <li><b>T5: </b>Data breach exposes user information (in our case only emails and password hashes).<br></li>
+                            <li class="green"><b>T5: </b>Data breach exposes user information (addressed).<br></li>
                         </ul>
                     </div>
                     <div class="col space-above-60">
@@ -127,8 +132,8 @@
                                 as they may follow their favorite games on social media or can look up any game they want on Google to get news.<br><br>
                             </li>
                             <li><b>C2: </b>Those that run video game news websites may believe that GameEye is trying to do their job for them.<br><br></li>
-                            <li><b>C3: </b>User does not know how to use the application.<br><br></li>
-                            <li><b>C4: </b>User does not like how information is categorized.<br></li>
+                            <li class="green"><b>C3: </b>User does not know how to use the application (addressed).<br><br></li>
+                            <li class="green"><b>C4: </b>User accidentally deletes a game in their watchlist (addressed).<br></li>
                         </ul>
                     </div>
                     <div class="col space-above-60">
@@ -144,17 +149,16 @@
                             </li>
                             <li><b>C3: </b>Provide instructional material (in-app tutorial, videos, etc.)<br><br></li>
                             <li>
-                                <b>C4: </b>Provide the ability for users to create their own categories; this would be a premium feature under a paid
-                                user plan because it would be expensive for us otherwise.<br><br>
+                                <b>C4: </b>Make it easy to re-add a deleted game.<br><br>
                             </li>
                         </ul>
                     </div>
                     <div class="col space-above-60">
                         <h5 class="risk-header">Security Risks:</h5>
                         <ul class="justified-list">
-                            <li>
+                            <li class="green">
                                 <b>S1: NoSQL Injection; </b>Malicious NoSQL queries could be injected into the application via improperly handled input data on
-                                the client to run on the database. NoSQL injections be used to modify data or execute operations on the database.<br><br>
+                                the client to run on the database. NoSQL injections be used to modify data or execute operations on the database (addressed).<br><br>
                             </li>
                             <li>
                                 <b>S2: Cross-Site Scripting (XSS); </b>Malicious scripts could be injected into the browser to redirect users to potentially
@@ -167,9 +171,9 @@
                                 <b>S4: Broken Authentication and Session Control; </b>Poor authentication and session control can allow attackers unauthorized
                                 access to user accounts (including admin accounts) through means such as compromising user passwords or session keys.<br><br>
                             </li>
-                            <li>
+                            <li class="green">
                                 <b>S5: Broken Access Control; </b>Poor access control can allow users access outside of their intended permissions, which can
-                                lead to unauthorized data modification and functionality.<br>
+                                lead to unauthorized data modification and functionality (addressed).<br>
                             </li>
                         </ul>
                     </div>
