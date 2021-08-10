@@ -1,4 +1,4 @@
-# CS411W Team Yellow Website
+# GameEye Team Website
 
 ## Requirements & Installation
 In order to export the website you will need:
